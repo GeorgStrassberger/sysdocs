@@ -1,0 +1,15 @@
+services:
+  sysdocs:
+    image: ghcr.io/georgstrassberger/sysdocs:latest
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.docs.rule=Host(`docs.devops-zone.com`)"
+      - "traefik.http.routers.docs.entrypoints=websecure"
+      - "traefik.http.routers.docs.tls.certresolver=letsencrypt"
+    networks:
+      - iotnetwork
+
+networks:
+  iotnetwork:
+    external: true

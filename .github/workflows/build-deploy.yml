@@ -1,0 +1,47 @@
+name: Build & Deploy Docusaurus to Hetzner
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker image
+        run: |
+          IMAGE_NAME=ghcr.io/georgstrassberger/sysdocs:latest
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME
+
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup SSH access
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Pull and restart container on Hetzner
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+            echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u georgstrassberger --password-stdin
+            cd /home/gest/docker/sysdocs
+            sudo docker compose pull
+            sudo docker compose up -d
+          EOF
