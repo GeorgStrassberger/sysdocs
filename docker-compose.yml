@@ -4,9 +4,10 @@ services:
     restart: always
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.docs.rule=Host(`docs.devops-zone.com`)"
-      - "traefik.http.routers.docs.entrypoints=websecure"
-      - "traefik.http.routers.docs.tls.certresolver=lets-encrypt"
+      - "traefik.http.routers.sysdocs.rule=Host(`docs.devops-zone.com`)"
+      - "traefik.http.routers.sysdocs.entrypoints=websecure"
+      - "traefik.http.routers.sysdocs.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.sysdocs.loadbalancer.server.port=4000"
     networks:
       - iotnetwork
 
