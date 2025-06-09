@@ -1,5 +1,6 @@
 services:
   sysdocs:
+    container_name: sysdocs
     image: ghcr.io/georgstrassberger/sysdocs:latest
     restart: always
     labels:
