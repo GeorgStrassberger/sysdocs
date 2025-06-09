@@ -42,6 +42,6 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
             echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u georgstrassberger --password-stdin
             cd /home/gest/docker/sysdocs
-            sudo docker compose pull
-            sudo docker compose up -d
+            docker compose pull
+            docker compose up -d
           EOF
