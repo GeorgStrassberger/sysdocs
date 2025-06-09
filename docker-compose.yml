@@ -6,7 +6,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.docs.rule=Host(`docs.devops-zone.com`)"
       - "traefik.http.routers.docs.entrypoints=websecure"
-      - "traefik.http.routers.docs.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.docs.tls.certresolver=lets-encrypt"
     networks:
       - iotnetwork
 
