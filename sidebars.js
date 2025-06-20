@@ -16,11 +16,15 @@
  */
 const sidebars = {
     iotSidebar: [
+        'iot/lorawan',
         {
             type: 'category',
             label: 'iot',
             items: ['iot/lorawan'],
         }
+    ],
+    patternSidebar:[
+        'pattern/type-naming',
     ],
     linuxSidebar: [
         {

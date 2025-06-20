@@ -67,6 +67,12 @@ const config = {
                     },
                     {
                         type: 'docSidebar',
+                        sidebarId: 'patternSidebar',
+                        position: 'left',
+                        label: 'Pattern',
+                    },
+                    {
+                        type: 'docSidebar',
                         sidebarId: 'linuxSidebar',
                         position: 'left',
                         label: 'Linux',
