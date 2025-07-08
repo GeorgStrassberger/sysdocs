@@ -67,6 +67,12 @@ const config = {
                     },
                     {
                         type: 'docSidebar',
+                        sidebarId: 'juiceShopSidebar',
+                        position: 'left',
+                        label: 'Juice Shop',
+                    },
+                    {
+                        type: 'docSidebar',
                         sidebarId: 'patternSidebar',
                         position: 'left',
                         label: 'Pattern',

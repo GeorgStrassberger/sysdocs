@@ -17,20 +17,19 @@
 const sidebars = {
     iotSidebar: [
         'iot/lorawan',
-        {
-            type: 'category',
-            label: 'iot',
-            items: ['iot/lorawan'],
-        }
     ],
     patternSidebar:[
-        'pattern/type-naming',
+        'pattern/api-naming-conventions',
+    ],
+    juiceShopSidebar: [
+        'juice-shop/autostart-service',
     ],
     linuxSidebar: [
+        'linux/docker',
         {
             type: 'category',
-            label: 'linux',
-            items: ['linux/docker'
+            label: 'kali',
+            items: ['linux/kali/kali'
             ],
         }
     ]
