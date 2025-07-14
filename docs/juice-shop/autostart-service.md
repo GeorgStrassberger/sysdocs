@@ -6,11 +6,13 @@ Automatically start the local nodejs server to run the **OWASP Juice Shop** in y
 
 - Node.js installed
 - npm installed
+- git
 - JuiceShop project cloned into your VM
 
 > **Download links:**
 > - Link to [Node.js](https://nodejs.org/en/download)
-> - Link to [GitHub_JucieShop](https://github.com/juice-shop/juice-shop)
+> - Link to [GitHub/juice-shop](https://github.com/juice-shop/juice-shop)
+> - Link to [git-scm](https://git-scm.com/)
 
 ---
 
@@ -53,6 +55,36 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
+
+or if you installed nodejs via `nvm` check the installed path.
+
+````bash
+which node
+which npm
+````
+Example output:
+````bash
+/home/kali/.nvm/versions/node/v20.17.0/bin/node
+/home/kali/.nvm/versions/node/v20.17.0/bin/npm
+````
+
+and change the `WorkingDirectory=/path/to/node/version`
+
+````json
+[Unit]
+Description=OWASP Juice Shop Autostart
+After=network.target
+
+[Service]
+Type=simple
+User=gest
+WorkingDirectory=/home/kali/juice-shop
+ExecStart=/home/kali/.nvm/versions/node/v22.17.0/bin/node build/app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+````
 
 Important Hint:
 

@@ -18,11 +18,32 @@ const sidebars = {
     iotSidebar: [
         'iot/lorawan',
     ],
-    patternSidebar:[
+    patternSidebar: [
         'pattern/api-naming-conventions',
     ],
     juiceShopSidebar: [
+        'juice-shop/index',
         'juice-shop/autostart-service',
+        {
+            type: 'category',
+            label: '1 Star',
+            items: [
+                'juice-shop/score_board',
+                'juice-shop/zero_stars',
+                'juice-shop/confidential_document',
+                'juice-shop/error_handling',
+                'juice-shop/dom_xss',
+                'juice-shop/missing_encoding',
+                'juice-shop/bully_chatbot'
+            ],
+        },
+        {
+            type: 'category',
+            label: 'Extra Aufgaben',
+            items: [
+                'juice-shop/fix_loadingpath'
+            ],
+        },
     ],
     linuxSidebar: [
         'linux/docker',
