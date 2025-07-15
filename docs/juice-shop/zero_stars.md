@@ -46,4 +46,5 @@ Click `Forword` to send the new POST Request.
 
 
 :::success Challenge completed!
+You successfuly solved a challenge: Zero Stars (Give a devastating zero-star feedback to the store.)
 :::

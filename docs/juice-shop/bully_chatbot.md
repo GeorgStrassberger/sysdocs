@@ -14,10 +14,10 @@ auf http://localhost:3000/#/chatbot
 
 Account erstellen, um mit ihm zu interagieren.
 
-Coupe code oft genug spammen dann gekommt man einen.
+Jetzt im dialog **coupon code** oft genug spammen, dann gekommt man nach ca. 8 versuchen einen.
 
-
+![coupon_code.png](img/coupon_code.png)
 
 :::success Challenge completed!
-
+You successfully solved a Challenge: Bully Chatbot (Receive a coupon code from the support chatbot.)
 :::

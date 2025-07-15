@@ -34,14 +34,20 @@ const sidebars = {
                 'juice-shop/error_handling',
                 'juice-shop/dom_xss',
                 'juice-shop/missing_encoding',
-                'juice-shop/bully_chatbot'
+                'juice-shop/bully_chatbot',
+                'juice-shop/privace_policy',
+                'juice-shop/exposed_matrics',
+                'juice-shop/repetitive_registration',
+                'juice-shop/outdated_allowlist',
+                'juice-shop/mass_dispel'
             ],
         },
         {
             type: 'category',
             label: 'Extra Aufgaben',
             items: [
-                'juice-shop/fix_loadingpath'
+                'juice-shop/fix_loadingpath',
+                'juice-shop/bonus_challenge'
             ],
         },
     ],
