@@ -9,7 +9,7 @@ Retrieve the photo of Bjoern's cat in "melee combat-mode".
 Find the missing Image.
 Inspect the webpage, find the URL-path and take a close look on it.
 
-![img.png](img/decode_zatschi-cat.png)
+![img.png](../img/decode_zatschi-cat.png)
 
 ````path
 src="assets/public/images/uploads/ᓚᘏᗢ-#zatschi-#whoneedsfourlegs-1572600969477.jpg"
@@ -24,7 +24,7 @@ Now change the `#` to urlencoded chars `%23`.
 src="assets/public/images/uploads/ᓚᘏᗢ-%23zatschi-%23whoneedsfourlegs-1572600969477.jpg"
 ````
 
-![ᓚᘏᗢ-%23zatschi-%23whoneedsfourlegs-1572600969477.jpg](img/encode_zatschi-cat.png)
+![ᓚᘏᗢ-%23zatschi-%23whoneedsfourlegs-1572600969477.jpg](../img/encode_zatschi-cat.png)
 
 :::success Challenge completed!
 You successfully solved a challenge: Missing Encoding (Retrieve the photo of Bjoern_s cat in "melee combat-mode").

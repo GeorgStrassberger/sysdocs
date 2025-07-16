@@ -10,7 +10,7 @@ First we need to see all "Successfully" massages agian.
 To do that, restart your local server and load the saved JSON file.
 Now you see all your compoleted challenges.
 
-![notifications.png](img/notifications.png)
+![notifications.png](../img/notifications.png)
 
 You can easy close all messages with one click. Hold `SHIFT & Click on the closing X`.
 

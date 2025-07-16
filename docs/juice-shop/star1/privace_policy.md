@@ -9,7 +9,7 @@ Read our privacy policy.
 You need to create an Account. 
 After logging in you can find it in the menu.
 
-![privice_policy.png](img/privice_policy.png)
+![privice_policy.png](../img/privice_policy.png)
 
 
 :::success Challenge completed!

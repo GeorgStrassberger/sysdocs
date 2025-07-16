@@ -28,25 +28,25 @@ const sidebars = {
             type: 'category',
             label: '1 Star',
             items: [
-                'juice-shop/score_board',
-                'juice-shop/zero_stars',
-                'juice-shop/confidential_document',
-                'juice-shop/error_handling',
-                'juice-shop/dom_xss',
-                'juice-shop/missing_encoding',
-                'juice-shop/bully_chatbot',
-                'juice-shop/privace_policy',
-                'juice-shop/exposed_matrics',
-                'juice-shop/repetitive_registration',
-                'juice-shop/outdated_allowlist',
-                'juice-shop/mass_dispel'
+                'juice-shop/star1/score_board',
+                'juice-shop/star1/zero_stars',
+                'juice-shop/star1/confidential_document',
+                'juice-shop/star1/error_handling',
+                'juice-shop/star1/dom_xss',
+                'juice-shop/star1/missing_encoding',
+                'juice-shop/star1/bully_chatbot',
+                'juice-shop/star1/privace_policy',
+                'juice-shop/star1/exposed_matrics',
+                'juice-shop/star1/repetitive_registration',
+                'juice-shop/star1/outdated_allowlist',
+                'juice-shop/star1/mass_dispel'
             ],
         },
         {
             type: 'category',
             label: 'Extra Aufgaben',
             items: [
-                'juice-shop/fix_loadingpath',
+                'juice-shop/persist_img_change',
                 'juice-shop/bonus_challenge'
             ],
         },

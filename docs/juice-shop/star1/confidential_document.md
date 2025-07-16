@@ -9,22 +9,22 @@ Access a confidential document.
 ## DE
 Unter der Seciton `About Us` befindet sich im Lorem Ipsum text ein [Link](http://localhost:3000/ftp/legal.md). 
 
-![aboutus.png](img/aboutus.png)
+![aboutus.png](../img/aboutus.png)
 
 Wenn man diesen öffnet, bekommt man eine Markdown Datei angezeigt, namens `legal.md` oder wird heruntergeladen.
 Dadurch sehen wir das sich die URL im Browser geändert hat zu `/ftp/legal.md`.
 
-![legal.png](img/legal.png)
+![legal.png](../img/legal.png)
 
 Wordurck wir rückschlüsse ziehen können das die seite noch einen ftp server hat um Datein bereit zustellen.
 Wir entfernen das legal.md aus der URL und schauen was passiert.
 
-![ftp.png](img/ftp.png)
+![ftp.png](../img/ftp.png)
 
 Die oberfläche es ftp server wird angezeigt und hier können wir und sämtliche dokumente ansehen die der FTP-Server bereitstellt.
 Wenn wir und die richtige Datei geöffnet haben, finden wir das geheime Dokument. 
 
-![acquisitions.png](img/acquisitions.png)
+![acquisitions.png](../img/acquisitions.png)
 
 :::success Challenge completed!
 You successfully solved a challenge: Confidential Document (Access a confidential document.)

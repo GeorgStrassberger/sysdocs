@@ -1,4 +1,4 @@
-# Änderung persistieren
+# Bildwechsel beibehalten
 
 Die Katze soll dauerhaft im OWASP Juice Shop angezeigt werden.
 

@@ -12,13 +12,13 @@ Start with open the Developertool in your browser.
 
 Redirect Link: 
 `href="./redirect?to=https://github.com/juice-shop/juice-shop"`
-![redirect_link.png](img/redirect_link.png)
+![redirect_link.png](../img/redirect_link.png)
 
 2. search for blockchain
 
 Blockchain Link:
 `herf="https://blockchain.info/address/1AbKfgvw9psQ41NbLi8kufDQTezwG8DRZm"`
-![blockchain_link.png](img/blockchain_link.png)
+![blockchain_link.png](../img/blockchain_link.png)
 
 3. build it together
 
