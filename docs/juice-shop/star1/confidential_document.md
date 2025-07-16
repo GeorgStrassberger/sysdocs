@@ -6,45 +6,24 @@ Access a confidential document.
 
 ---
 
-## DE
-Unter der Seciton `About Us` befindet sich im Lorem Ipsum text ein [Link](http://localhost:3000/ftp/legal.md). 
+Under the section `About Us` there is a [Link](http://localhost:3000/ftp/legal.md) in the Lorem Ipsum text.
 
 ![aboutus.png](../img/aboutus.png)
 
-Wenn man diesen öffnet, bekommt man eine Markdown Datei angezeigt, namens `legal.md` oder wird heruntergeladen.
-Dadurch sehen wir das sich die URL im Browser geändert hat zu `/ftp/legal.md`.
+If you open this, you will see a Markdown file called `legal.md` or it will be downloaded.
+This shows us that the URL in the browser has changed to `/ftp/legal.md`.
 
 ![legal.png](../img/legal.png)
 
-Wordurck wir rückschlüsse ziehen können das die seite noch einen ftp server hat um Datein bereit zustellen.
-Wir entfernen das legal.md aus der URL und schauen was passiert.
+Which allows us to conclude that the site still has an ftp server to provide files.
+We remove the legal.md from the URL and see what happens.
 
 ![ftp.png](../img/ftp.png)
 
-Die oberfläche es ftp server wird angezeigt und hier können wir und sämtliche dokumente ansehen die der FTP-Server bereitstellt.
-Wenn wir und die richtige Datei geöffnet haben, finden wir das geheime Dokument. 
+The ftp server interface is displayed and here we can view all the documents that the FTP server provides.
+If we have opened the right file, we will find the secret document.
 
 ![acquisitions.png](../img/acquisitions.png)
-
-:::success Challenge completed!
-You successfully solved a challenge: Confidential Document (Access a confidential document.)
-:::
-
----
-
-## EN
-
-Go to /about section and start the 'burpsuite' with 'intercapt on', click on the link for the Terms.
-You will get a Markdown file.
-Now look into your `burpsuite proxy` and open the GET Request. You can see the path to *http://localhost:3000/ftp/legal.md*. 
-We can see an *FTP* server exists. 
-Try to open there with `http://localhost:3000/ftp`. 
-
-The file what we searching for is `acquisitions.md`.
-
-````url
-http://localhost:3000/ftp/acquisitions.md
-````
 
 :::success Challenge completed!
 You successfully solved a challenge: Confidential Document (Access a confidential document.)

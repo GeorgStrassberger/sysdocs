@@ -10,26 +10,22 @@ Follow the DRY principle while registering a user.
 > ***D***on't
 > ***R***epeat
 > ***Y***ourself
->
-> "Wiederhole dich nicht"
 
-
-
-Der normale Vergang der Registierung funktioniert einwandfrei.
+The normal registration process works perfectly.
 
 ![normal_register.png](../img/normal_register.png)
 
-Im Browser kann man die Passwort anzeige einfach ändern. In dem man auf der Seite mit der *Rechten Maustaste* das *Context Menü* öffnet, und auf Untersuchten klickt.
-Das Passwort eingabefeld sucht und die Anzeige attribute untersucht und z.B. `text="password"` ändert oder entfernt. 
+You can easily change the password display in the browser. By opening the *Context menu* on the page with the *Right mouse button* and clicking on Examine.
+Find the password input field and examine the display attributes and change or remove e.g. `text=“password”`.
 
 ![regiser_view.png](../img/regiser_view.png)
 
-Wenn die 2te Passwort eingabe übereinstimmmt. Wird das erste nicht mehr neu geprüft.
-Erst wieder wenn man im 2ten etwas ändert. Dadurch kann man beabsichtigt ein falschen Passwort angeben wenn es der Server nicht nochmal gegenprüft.
+If the 2nd password entered matches. The first one is not checked again.
+Only if you change something in the 2nd one. This means that you can intentionally enter an incorrect password if the server does not check it again.
 
 ![change_register_pw.png](../img/change_register_pw.png)
 
-Falsche Eingabe (OHNE das Passwort nochmal zu wiederholen) bestätigen und fertig.
+Confirm the incorrect entry (WITHOUT repeating the password) and you're done.
 
 :::success Challenge completed!
 You successfully solved a challenge: Repetitive Registration (Follow the DRY principle while registering a user.)
@@ -39,7 +35,7 @@ You successfully solved a challenge: Repetitive Registration (Follow the DRY pri
 
 ## Login
 
-Beim Login wird nur das erste Passwort benötigt
+Only the first password is required for login
 
 ```
 email: john@doe.com

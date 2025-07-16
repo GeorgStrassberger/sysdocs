@@ -6,9 +6,10 @@ Version 18.0.0
 
 ---
 
-### Start the Challenge with finding the Scope Board.
+### Score Borad
 
-Schalte im Menü den link zum `Score Board` frei.
-Auf dem `Scoreboard` werden alle Aufgaben angezeigt und man kann jetzt den aktuellen stand las JSON runterladen und
-jederzeit wieder hochladen.
+The first task is to find a way to unlock the hidden `Score Board`.
 
+Then you can view all the Challenges on the `Score Board`.
+
+Save and restore your progress.

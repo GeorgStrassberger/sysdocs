@@ -6,15 +6,17 @@ Receive a coupon code from the support chatbot.
 
 ----
 
-Mit `gobuster` und der Wordlist von *teachabl?* suchen.
+You can use the same procedure as for the Score Board.
 
-auf http://localhost:3000/#/chatbot
+By using `gobuster` or `inspecting` the page for hidden links.
 
-öffnet sich der Chatbot.
+What is also often helpful is to create a fake account with false information to find out more about the site.
 
-Account erstellen, um mit ihm zu interagieren.
+You can find the chatbot at `http://localhost:3000/#/chatbot`.
 
-Jetzt im dialog **coupon code** oft genug spammen, dann gekommt man nach ca. 8 versuchen einen.
+To interact with him, you need an account.
+
+Now you can ask him about the "coupon code". After 8 trys or more you will get the code.
 
 ![coupon_code.png](../img/coupon_code.png)
 
