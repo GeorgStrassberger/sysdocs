@@ -1,8 +1,8 @@
-# Bonus Challenge DA
+# Bonus Challenge 2
 
 ***1 Star Challenge X/28***
 
-Stelle deinen Score-Board Zustand des OWASP Juice Shops wieder her ohne das Laden der `*.json` Datei.
+Restore your `Score Board` state of the OWASP Juice Shop without loading the `*.json` file.
 
 ---
 
@@ -38,6 +38,8 @@ Stelle deinen Score-Board Zustand des OWASP Juice Shops wieder her ohne das Lade
 10. Burpsuite "Intercept off"
 11. reload page
 12. go back to /#/score-board
+
+---
 
 :::success
 Successfully all challenges loaded.

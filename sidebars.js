@@ -46,8 +46,8 @@ const sidebars = {
             type: 'category',
             label: 'Extra Aufgaben',
             items: [
-                'juice-shop/persist_img_change',
-                'juice-shop/bonus_challenge'
+                'juice-shop/bonus_challenge_1',
+                'juice-shop/bonus_challenge_2'
             ],
         },
     ],
