@@ -1,6 +1,6 @@
 # Bully Chatbot
 
-***1 Star Challenge 7/28***
+***1 Star Challenge 6/28***
 
 Receive a coupon code from the support chatbot.
 

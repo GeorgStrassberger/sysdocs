@@ -15,9 +15,6 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-    iotSidebar: [
-        'iot/lorawan',
-    ],
     patternSidebar: [
         'pattern/api-naming-conventions',
     ],
@@ -31,16 +28,24 @@ const sidebars = {
                 'juice-shop/star1/score_board',
                 'juice-shop/star1/zero_stars',
                 'juice-shop/star1/confidential_document',
-                'juice-shop/star1/error_handling',
                 'juice-shop/star1/dom_xss',
                 'juice-shop/star1/missing_encoding',
                 'juice-shop/star1/bully_chatbot',
+                'juice-shop/star1/bonus_payload',
                 'juice-shop/star1/privace_policy',
                 'juice-shop/star1/exposed_matrics',
                 'juice-shop/star1/repetitive_registration',
                 'juice-shop/star1/outdated_allowlist',
-                'juice-shop/star1/mass_dispel'
+                'juice-shop/star1/mass_dispel',
+                'juice-shop/star1/error_handling'
             ],
+        },
+        {
+            type: 'category',
+            label: '2 Star',
+            items: [
+                'juice-shop/star2/admin-section'
+            ]
         },
         {
             type: 'category',
@@ -50,15 +55,6 @@ const sidebars = {
                 'juice-shop/bonus_challenge_2'
             ],
         },
-    ],
-    linuxSidebar: [
-        'linux/docker',
-        {
-            type: 'category',
-            label: 'kali',
-            items: ['linux/kali/kali'
-            ],
-        }
     ]
 };
 

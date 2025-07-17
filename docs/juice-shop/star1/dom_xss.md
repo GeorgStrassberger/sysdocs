@@ -1,6 +1,6 @@
 # DOM XSS
 
-***1 Star Challenge 5/28***
+***1 Star Challenge 4/28***
 
 Perform a DOM XSS attack with `<iframe src="javascript:alert('xss')">`.
 

@@ -61,12 +61,6 @@ const config = {
                 items: [
                     {
                         type: 'docSidebar',
-                        sidebarId: 'iotSidebar',
-                        position: 'left',
-                        label: 'IoT',
-                    },
-                    {
-                        type: 'docSidebar',
                         sidebarId: 'juiceShopSidebar',
                         position: 'left',
                         label: 'Juice Shop',
@@ -76,12 +70,6 @@ const config = {
                         sidebarId: 'patternSidebar',
                         position: 'left',
                         label: 'Pattern',
-                    },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'linuxSidebar',
-                        position: 'left',
-                        label: 'Linux',
                     },
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {

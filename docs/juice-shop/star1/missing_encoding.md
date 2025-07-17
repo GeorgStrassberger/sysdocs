@@ -1,6 +1,6 @@
 # Missing Encoding
 
-***1 Star Challenge 6/28***
+***1 Star Challenge 5/28***
 
 Retrieve the photo of Bjoern's cat in "melee combat-mode".
 
