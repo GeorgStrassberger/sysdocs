@@ -65,7 +65,10 @@ const sidebars = {
                 'juice-shop/bonus_challenge_2'
             ],
         },
-    ]
+    ],
+    toolSidebar: [
+        'tools/powershell',
+    ],
 };
 
 export default sidebars;

@@ -71,6 +71,12 @@ const config = {
                         position: 'left',
                         label: 'Pattern',
                     },
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'toolSidebar',
+                        position: 'left',
+                        label: 'Tools',
+                    },
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/facebook/docusaurus',
