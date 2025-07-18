@@ -1,17 +1,17 @@
-# Admin Section
+# Login Admin
 
 ***2 Star Challenge 1/23***
 
-Access the administration section of the store.
+Log in with the administrator's user account.
 
 ---
 
-### Step 1
+## Step 1
 Richtig einloggen und den Request & Response ansehen.
 
 ![login_try_1.png](../img/login_try_1.png)
 
-### Step 2
+## Step 2
 Falsch einloggen und den Request & Response ansehen.
 
 Mit absicht fehlermeldungen verurschen um daraus Informationen beziehen zu können.
@@ -19,7 +19,7 @@ Mit absicht fehlermeldungen verurschen um daraus Informationen beziehen zu könn
 ![login_try_2.png](../img/login_try_2.png)
 ![login_try_2_response.png](../img/login_try_2_response.png)
 
-### Step 3
+## Step 3
 Informationen auswerten.
 - Wo geht der Request hin?
 - Was wird alles mit geschickt?
@@ -39,7 +39,7 @@ Informationen auswerten.
 }
 ````
 
-### Step 4
+## Step 4
 SQL Injection vorbereiten.
 
 Mit der eingabe von `' OR 1=1 --` wird unser payload an die datenbank so aussehen

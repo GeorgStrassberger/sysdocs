@@ -44,7 +44,17 @@ const sidebars = {
             type: 'category',
             label: '2 Star',
             items: [
-                'juice-shop/star2/admin-section'
+                'juice-shop/star2/login_admin',
+                'juice-shop/star2/admin_section',
+                'juice-shop/star2/five_star_feedback',
+                'juice-shop/star2/empty_user_registration'
+            ]
+        },
+        {
+            type: 'category',
+            label: '3 Star',
+            items: [
+                'juice-shop/star3/login_bender'
             ]
         },
         {
