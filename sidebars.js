@@ -21,6 +21,7 @@ const sidebars = {
     juiceShopSidebar: [
         'juice-shop/index',
         'juice-shop/autostart-service',
+        'juice-shop/account_list',
         {
             type: 'category',
             label: '1 Star',
@@ -37,7 +38,8 @@ const sidebars = {
                 'juice-shop/star1/repetitive_registration',
                 'juice-shop/star1/outdated_allowlist',
                 'juice-shop/star1/mass_dispel',
-                'juice-shop/star1/error_handling'
+                'juice-shop/star1/error_handling',
+                'juice-shop/star1/sandbox'
             ],
         },
         {
@@ -47,7 +49,9 @@ const sidebars = {
                 'juice-shop/star2/login_admin',
                 'juice-shop/star2/admin_section',
                 'juice-shop/star2/five_star_feedback',
-                'juice-shop/star2/empty_user_registration'
+                'juice-shop/star2/empty_user_registration',
+                'juice-shop/star2/password_strength',
+                'juice-shop/star2/deprecated_interface'
             ]
         },
         {

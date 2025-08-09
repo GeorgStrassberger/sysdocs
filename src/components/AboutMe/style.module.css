@@ -1,0 +1,11 @@
+.aboutMe_container {
+    position: relative;
+    background-color: #266AD9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+
+}
