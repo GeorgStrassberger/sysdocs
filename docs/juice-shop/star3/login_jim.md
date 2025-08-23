@@ -24,9 +24,8 @@ open sqlmap in the terminal
 
 run sqlmap -r /path/to/the/textfile --ignore-code=401
 
-````
+![login_jim.png](../img/login_jim.png)
 
-````
 
 :::success Challenge completed!
 You successfully solved a challenge: Login Jim (Log in with Jim's user account.)

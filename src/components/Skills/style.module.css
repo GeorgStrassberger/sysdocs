@@ -1,0 +1,20 @@
+.skills {
+    background-color: #262E34;
+    color: #FFFFFF;
+    /*hovercoler #91C9F3*/
+}
+
+.skills__container{
+
+}
+
+.skill{
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #91C9F31A;
+}
+.skill:hover{
+    background-color: #79B8FF80;
+}
