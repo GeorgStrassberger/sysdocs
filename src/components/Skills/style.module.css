@@ -1,20 +1,71 @@
-.skills {
-    background-color: #262E34;
-    color: #FFFFFF;
-    /*hovercoler #91C9F3*/
+/*Desktop*/
+/* Überschirft*/
+/*2 Font Quicksand*/
+/*2 Weight 700*/
+/*2 Style Bold*/
+/*Size 64px   40px*/
+/*Line height 120% 100*/
+/*Letter spacing 0%*/
+
+
+.mySkills {
+    padding-block: 3rem;
+    color: var(--white);
+    font-family: var(--f-sans), sans-serif;
+
+    .title {
+        color: var(--white);
+        font-family: var(--f-sans), sans-serif;
+        font-size: clamp(40px, 2.4vw, 64px);
+        font-weight: 500;
+        line-height: var(--lh);
+        text-align: center;
+    }
+
+    .skills {
+        color: var(--white);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .skill {
+            padding: 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            transition: all 200ms ease-in-out;
+            background-color: var(--gray);
+
+            &:hover {
+                transition: all 200ms ease-in-out;
+                background-color: var(--blue-dark);
+            }
+
+            span {
+                text-align: center;
+            }
+        }
+
+    }
+
 }
 
-.skills__container{
 
-}
+@media (min-width: 768px) {
+    .mySkills {
 
-.skill{
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #91C9F31A;
-}
-.skill:hover{
-    background-color: #79B8FF80;
+        .title {
+            text-align: left;
+            font-weight: 700;
+            line-height: 100%;
+        }
+
+        .skills {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }

@@ -1,11 +1,120 @@
-.aboutMe_container {
-    position: relative;
-    background-color: #266AD9;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 2rem;
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-@media screen and (max-width: 996px) {
+.article{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.intro{
+    font-size: clamp(16px, 2.2vw, 32px);
+    font-weight: 400;
+    line-height: var(--lh);
+}
+
+.wave {
+    display: inline-block;
+    transform-origin: 70% 70%; /* Drehpunkt: Handgelenk */
+    animation: wave 2s infinite ease-in-out;
+}
+
+.name{
+    font-size: clamp(48px, 5vw, 88px);
+    font-weight: 700;
+    line-height: var(--lh);
+    font-family: var(--f-sans), sans-serif;
+}
+
+.role{
+    font-size: clamp(24px, 2.4vw, 32px);
+    font-weight: 500;
+    line-height: var(--lh);
+}
+
+.desc{
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 500;
+    line-height: var(--lh);
+}
+
+.button{
+    font-size: clamp(16px, 2.2vw, 20px);
+    font-weight: 600;
+    line-height: var(--lh);
+    padding: 14px 20px;
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+    width: max-content;
+
+    &:hover{
+        transition: all 200ms ease-in-out;
+        opacity: 0.8;
+        text-decoration: none;
+    }
+}
+
+h1, p{
+    width: 100%;
+    margin: 0;
+}
+.aside{
+    display: none;
+}
+
+.portrait{
+    display: block;
+    width: clamp(220px, 32vw, 420px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60%, 100% { transform: rotate(0deg); }
+}
+
+
+@media (min-width: 768px) {
+    .aboutMe {
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+
+    .article {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .desc{
+        font-weight: 600;
+    }
+
+    .article picture {
+        display: none;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2rem;
+    }
 
 }

@@ -72,6 +72,7 @@ const sidebars = {
     ],
     toolSidebar: [
         'tools/powershell',
+        'tools/docker'
     ],
 };
 
