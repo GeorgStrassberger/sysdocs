@@ -20,7 +20,8 @@ export function AboutMe() {
                             <br/> Why are you passionate about coding? Do you habe a deep interest in games? What is
                             your programming skills? Are you constantly learning and keeping up to date?
                         </p>
-                        <a href="/docs/juice-shop" className={styles.button}>Contact me</a>
+                        <a href="#contact" className={styles.button}>Contact me</a>
+                        <a href="/docs/juice-shop" className={styles.button}>DOCS</a>
                     </article>
                     {/* PHOTO */}
                     <aside className={styles.aside}>
