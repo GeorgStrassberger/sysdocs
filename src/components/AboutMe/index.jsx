@@ -21,7 +21,6 @@ export function AboutMe() {
                             your programming skills? Are you constantly learning and keeping up to date?
                         </p>
                         <a href="#contact" className={styles.button}>Contact me</a>
-                        <a href="/docs/juice-shop" className={styles.button}>DOCS</a>
                     </article>
                     {/* PHOTO */}
                     <aside className={styles.aside}>
