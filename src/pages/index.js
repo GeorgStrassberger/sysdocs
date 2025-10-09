@@ -1,21 +1,22 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
 import {AboutMe} from "../components/AboutMe";
+import {Contact} from "../components/ContactMe";
+import {Footer} from "../components/Footer";
+import {Projects} from "../components/Projects";
 import {Skills} from "../components/Skills";
+import {Navbar} from "../components/Navbar";
 
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
     return (
-        <Layout
-            title={`${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />"
-        >
+        <>
+            <Navbar />
             <AboutMe />
             <Skills />
-            <main>
-
-            </main>
-        </Layout>
+            <Projects />
+            <Contact />
+            <Footer />
+        </>
     );
 }

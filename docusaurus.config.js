@@ -50,13 +50,13 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            // Replace with your project's social card
+            // Replace it with your project's social card
             image: 'img/docusaurus-social-card.jpg',
             navbar: {
                 title: 'DevOps-Zone',
                 logo: {
                     alt: 'devops-zone-logo',
-                    src: 'img/logo.svg',
+                    src: 'img/georg-emoji-md.png',
                 },
                 items: [
                     {
@@ -79,7 +79,7 @@ const config = {
                     },
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {
-                        href: 'https://github.com/facebook/docusaurus',
+                        href: 'https://github.com/GeorgStrassberger',
                         label: 'GitHub',
                         position: 'right',
                     },

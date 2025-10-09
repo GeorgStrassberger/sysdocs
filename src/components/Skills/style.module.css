@@ -1,20 +1,102 @@
-.skills {
-    background-color: #262E34;
-    color: #FFFFFF;
-    /*hovercoler #91C9F3*/
+.mySkills {
+    padding-block: 3rem;
+    color: var(--white);
+    font-family: var(--f-sans), sans-serif;
+
+    .skills {
+        color: var(--white);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .skillFlip{
+            perspective: 50rem;
+
+            .skillCard {
+                position: relative;
+                transform: rotateY(0deg);
+                transition: transform 0.8s ease-in-out;
+                transform-style: preserve-3d;
+            }
+
+            &:hover .skillCard {
+                transform: rotateY(180deg);
+            }
+
+            .skillFront, .skillBack {
+                position: absolute;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }
+
+            .skillFront {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+            }
+
+            .skillBack {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+                opacity: 1;
+            }
+        }
+        .skillContainer {
+
+            .skillCard {
+                position: relative;
+                min-height: 16rem;
+                box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                cursor: pointer;
+
+                .skillFront, .skillBack {
+                    padding: 2rem;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+
+                .skillFront {
+                    background-color: var(--gray);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .text {
+                        text-align: center;
+                    }
+                }
+
+                .skillBack {
+                    background-color: var(--blue-dark);
+                }
+            }
+        }
+    }
 }
 
-.skills__container{
 
+@media (min-width: 768px) {
+    .mySkills {
+
+        .skills {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
-.skill{
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #91C9F31A;
-}
-.skill:hover{
-    background-color: #79B8FF80;
+@media (min-width: 992px) {
+    .mySkills {
+
+        .skills {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }

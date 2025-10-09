@@ -27,7 +27,7 @@ Content-Length: 254
 Accept-Language: de-DE,de;q=0.9
 Accept: application/json, text/plain, */*
 Content-Type: application/json
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (X11; linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
 Origin: http://192.168.178.33:3000
 Referer: http://192.168.178.33:3000/
 Accept-Encoding: gzip, deflate, br
@@ -58,7 +58,7 @@ Content-Length: 254
 Accept-Language: de-DE,de;q=0.9
 Accept: application/json, text/plain, */*
 Content-Type: application/json
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (X11; linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
 Origin: http://192.168.178.33:3000
 Referer: http://192.168.178.33:3000/
 Accept-Encoding: gzip, deflate, br
@@ -107,7 +107,7 @@ Content-Length: 34
 Accept-Language: de-DE,de;q=0.9
 Accept: application/json, text/plain, */*
 Content-Type: application/json
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+User-Agent: Mozilla/5.0 (X11; linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
 Origin: http://192.168.178.33:3000
 Referer: http://192.168.178.33:3000/
 Accept-Encoding: gzip, deflate, br
