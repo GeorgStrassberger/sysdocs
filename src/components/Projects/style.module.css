@@ -1,0 +1,16 @@
+.projects{
+    padding-block: 2rem;
+    color: var(--white);
+
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .projects{
+
+    }
+}

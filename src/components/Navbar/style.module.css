@@ -1,0 +1,123 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+
+    .logo {
+        .link {
+            text-transform: uppercase;
+            color: var(--white);
+            font-family: var(--f-sans), sans-serif;
+            font-weight: 600;
+            font-size: clamp(22px, 2.5vw, 24px);
+            line-height: var(--lh);
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                color: var(--black);
+                transition: all 200ms ease-in-out;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        .link {
+            text-transform: uppercase;
+            color: var(--white);
+            font-family: var(--f-sans), sans-serif;
+            font-weight: 600;
+            font-size: clamp(22px, 2.5vw, 24px);
+            line-height: var(--lh);
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                color: var(--black);
+                transition: all 200ms ease-in-out;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .icon {
+        display: block;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+    }
+}
+
+.menu {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--blue);
+
+    .menuLink {
+        text-transform: uppercase;
+        color: var(--white);
+        font-family: var(--f-sans), sans-serif;
+        font-weight: 600;
+        font-size: clamp(22px, 2.5vw, 24px);
+        line-height: var(--lh);
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            color: var(--black);
+            transition: all 200ms ease-in-out;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+
+        .links {
+            display: none;
+            justify-content: space-between;
+
+            .link {
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        justify-content: flex-start;
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 4rem;
+        }
+
+        .icon {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+}

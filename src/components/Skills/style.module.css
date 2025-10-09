@@ -1,26 +1,7 @@
-/*Desktop*/
-/* Überschirft*/
-/*2 Font Quicksand*/
-/*2 Weight 700*/
-/*2 Style Bold*/
-/*Size 64px   40px*/
-/*Line height 120% 100*/
-/*Letter spacing 0%*/
-
-
 .mySkills {
     padding-block: 3rem;
     color: var(--white);
     font-family: var(--f-sans), sans-serif;
-
-    .title {
-        color: var(--white);
-        font-family: var(--f-sans), sans-serif;
-        font-size: clamp(40px, 2.4vw, 64px);
-        font-weight: 500;
-        line-height: var(--lh);
-        text-align: center;
-    }
 
     .skills {
         color: var(--white);
@@ -28,41 +9,91 @@
         grid-template-columns: 1fr;
         gap: 1rem;
 
-        .skill {
-            padding: 2rem;
-            border-radius: 10px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            transition: all 200ms ease-in-out;
-            background-color: var(--gray);
+        .skillFlip{
+            perspective: 50rem;
 
-            &:hover {
-                transition: all 200ms ease-in-out;
-                background-color: var(--blue-dark);
+            .skillCard {
+                position: relative;
+                transform: rotateY(0deg);
+                transition: transform 0.8s ease-in-out;
+                transform-style: preserve-3d;
             }
 
-            span {
-                text-align: center;
+            &:hover .skillCard {
+                transform: rotateY(180deg);
+            }
+
+            .skillFront, .skillBack {
+                position: absolute;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }
+
+            .skillFront {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+            }
+
+            .skillBack {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+                opacity: 1;
             }
         }
+        .skillContainer {
 
+            .skillCard {
+                position: relative;
+                min-height: 16rem;
+                box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                cursor: pointer;
+
+                .skillFront, .skillBack {
+                    padding: 2rem;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+
+                .skillFront {
+                    background-color: var(--gray);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .text {
+                        text-align: center;
+                    }
+                }
+
+                .skillBack {
+                    background-color: var(--blue-dark);
+                }
+            }
+        }
     }
-
 }
 
 
 @media (min-width: 768px) {
     .mySkills {
 
-        .title {
-            text-align: left;
-            font-weight: 700;
-            line-height: 100%;
+        .skills {
+            grid-template-columns: 1fr 1fr;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .mySkills {
 
         .skills {
             grid-template-columns: 1fr 1fr 1fr;

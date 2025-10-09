@@ -11,7 +11,7 @@ export function AboutMe() {
                         <p className={styles.role}>Security operations developer</p>
                         <picture>
                             <source srcSet="img/georg-emoji-md.png" media="(min-width: 768px)"/>
-                            <img className={styles.portrait} src="img/georg-emoji-lg.png" alt="Portrait von Vorname Nachname"
+                            <img className={styles.portrait} src="img/georg-emoji-lg.png" alt="Foto von Georg Strassberger"
                                  fetchPriority="high"/>
                         </picture>
                         <p className={styles.desc}>
@@ -22,10 +22,11 @@ export function AboutMe() {
                         </p>
                         <a href="/docs/juice-shop" className={styles.button}>Contact me</a>
                     </article>
+                    {/* PHOTO */}
                     <aside className={styles.aside}>
                         <picture>
                             <source srcSet="img/georg-emoji-md.png" media="(min-width: 768px)"/>
-                            <img className={styles.portrait} src="img/georg-emoji-lg.png" alt="Portrait von Vorname Nachname"
+                            <img className={styles.portrait} src="img/georg-emoji-lg.png" alt="Foto von Georg Strassberger"
                                  fetchPriority="high"/>
                         </picture>
                     </aside>
