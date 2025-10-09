@@ -16,8 +16,8 @@
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --black: #262E34;
-    --gray: #91C9F31A;
-    --blue-dark:#79B8FF80;
+    --gray: #313D47;
+    --blue-dark:#557AA3;
     --blue: #266AD9;
     --blue-light: #91C9F3;
     --white: #FFFFFF;
@@ -78,6 +78,7 @@ body {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 
 @media (min-width: 576px) {
     .my_container {
