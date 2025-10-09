@@ -30,7 +30,7 @@ export function Navbar() {
                     >
                         <img
                             className={styles.icon}
-                            src={open ? '/img/x-lg.svg' : '/img/list.svg'}
+                            src={open ? '/img/close_32.png' : '/img/menu_32.png'}
                             alt=""
                             aria-hidden="true"
                         />
