@@ -15,11 +15,11 @@
 
 | Kontext               | Typename                     |
 |:----------------------|:-----------------------------|
-| Eingabe-Formular      | `XxxFormData`                |
-| Payload an API        | `XxxPayload`, `XxxCreateDto` |
-| Serverantwort (API)   | `XxxResponseDto`             |
-| DB-Modell/ORM-Entity  | `XxxEntity`                  |
-| UI-Model (nur Client) | `XxxViewModel`               |
+| Eingabe-Formular      | `XyzFormData`                |
+| Payload an API        | `XyzPayload`, `XyzCreateDto` |
+| Serverantwort (API)   | `XyzResponseDto`             |
+| DB-Modell/ORM-Entity  | `XyzEntity`                  |
+| UI-Model (nur Client) | `XyzViewModel`               |
 
 
 ### Vereinfachtes Beispiel Muster
@@ -29,8 +29,7 @@
 ````ts
 type PostDto = {
     title: string;
-    category: string;
-    article: string;
+    text: string;
 }
 ````
 
@@ -41,6 +40,7 @@ type PostEntity = PostDto & {
     updatedAt: string;
 }
 ````
+![Post](img/post.png)
 
 **Registration & Anmeldung**
 

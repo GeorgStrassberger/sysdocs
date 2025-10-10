@@ -18,6 +18,24 @@ const sidebars = {
     patternSidebar: [
         'pattern/api-naming-conventions',
     ],
+    projectSidebar: [
+        'da-projects/overview',
+        'da-projects/vserver',
+        'da-projects/baby-tools',
+        'da-projects/truck-signs-api',
+        'da-projects/minecraft',
+        'da-projects/wordpress',
+        'da-projects/gh-action',
+        {
+            type: 'category',
+            label: 'Conduit',
+            items: [
+                'da-projects/conduit',
+                'da-projects/conduit-frontend',
+                'da-projects/conduit-backend'
+            ]
+        },
+    ],
     juiceShopSidebar: [
         'juice-shop/index',
         'juice-shop/autostart-service',

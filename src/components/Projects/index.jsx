@@ -206,7 +206,7 @@ export function Projects() {
                                 Why did you find this project so interesting?
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/baby-tools.md">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/baby-tools">Documentation</a>
                                 <a className={styles.link} href="https://gitlab.com/geeser/baby_tool_shop" target="_blank">GitLab</a>
                             </div>
                         </div>
@@ -247,7 +247,7 @@ export function Projects() {
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/juice-shop">Documentation</a>
-                                <a className={styles.link} href="#" target="_blank">Github</a>
+                                <a className={styles.link} href="https://github.com/juice-shop/juice-shop" target="_blank">Github</a>
                             </div>
                         </div>
                         {/* vSERVER */}

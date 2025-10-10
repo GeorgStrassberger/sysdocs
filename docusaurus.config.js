@@ -8,7 +8,7 @@ const config = {
     future: {
         v4: true,
     },
-    url: 'https://devops-zone.com',
+    url: 'https://docs.devops-zone.com',
     baseUrl: '/',
     organizationName: 'GEST',
     projectName: 'SysDocs',
@@ -53,12 +53,18 @@ const config = {
             // Replace it with your project's social card
             image: 'img/docusaurus-social-card.jpg',
             navbar: {
-                title: 'DevOps-Zone',
+                title: 'GS',
                 logo: {
-                    alt: 'devops-zone-logo',
+                    alt: 'georg-emoji-logo',
                     src: 'img/georg-emoji-md.png',
                 },
                 items: [
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'projectSidebar',
+                        position: 'left',
+                        label: 'Projects',
+                    },
                     {
                         type: 'docSidebar',
                         sidebarId: 'juiceShopSidebar',
