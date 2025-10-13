@@ -17,11 +17,11 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --black: #262E34;
     --gray: #313D47;
-    --blue-dark:#557AA3;
+    --blue-dark: #557AA3;
     --blue: #266AD9;
     --blue-light: #91C9F3;
     --white: #FFFFFF;
-    --f-sans: "Quicksand", sans-serif;
+    --f-sans: 'Quicksand', system-ui, -apple-system, sans-serif;
     --f-mono: monospace;
     --lh: 120%;
 }
@@ -40,12 +40,13 @@
 
 @font-face {
     font-family: 'Quicksand';
-    src: url('/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 700; /* Variable Font Range */
+    src:url('/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
     font-display: swap;
+    font-style: normal;
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -54,11 +55,11 @@ body {
     min-height: 100dvh;
 }
 
-.bg-blue{
+.bg-blue {
     background-color: var(--blue);
 }
 
-.bg-black{
+.bg-black {
     background-color: var(--black);
 }
 

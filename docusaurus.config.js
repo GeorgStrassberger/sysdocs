@@ -15,8 +15,8 @@ const config = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     i18n: {
-        defaultLocale: 'de',
-        locales: ['de'],
+        defaultLocale: 'en',
+        locales: ['en'],
     },
     presets: [
         [
