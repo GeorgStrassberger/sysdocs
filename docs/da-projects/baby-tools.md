@@ -59,7 +59,7 @@ To run this project, ensure you have the following installed on your system:
 - `.`The dot (.) means the current directory is used as the build context.
 
 > **Note**
-> Link to the [Dockerfile](./babyshop_app/Dockerfile) with description.
+> Link to the [Dockerfile](https://gitlab.com/geeser/baby_tool_shop/-/blob/main/babyshop_app/Dockerfile?ref_type=heads) with description.
 
 ### 3. Create Docker Volumes
 

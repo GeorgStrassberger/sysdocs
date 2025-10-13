@@ -14,12 +14,18 @@
             background-color: var(--gray);
             padding-inline: 1rem;
             border-radius: 30px;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-areas:
+                    "title"
+                    "skills"
+                    "image"
+                    "article"
+                    "buttons";
             gap: 1rem;
             padding: 2rem;
 
-            .projectName {
+            .projectTitle {
+                grid-area: title;
                 margin: 0;
                 text-align: center;
                 font-family: var(--f-sans), sans-serif;
@@ -29,6 +35,7 @@
             }
 
             .skills {
+                grid-area: skills;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -53,6 +60,7 @@
             }
 
             .image {
+                grid-area: image;
                 display: block;
                 max-height: 15rem;
                 width: 100%;
@@ -63,10 +71,12 @@
             }
 
             .description {
+                grid-area: article;
                 text-align: center;
             }
 
             .linkGroup {
+                grid-area: buttons;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -99,5 +109,18 @@
 
     .projectsContainer {
 
+        .projects {
+
+            .project {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas:
+                    "title skills"
+                    "image article"
+                    "image buttons";
+                gap: 2rem;
+            }
+
+        }
     }
 }
