@@ -1,11 +1,16 @@
 import styles from './style.module.css';
+import Translate from "@docusaurus/Translate";
 
 export function Skills() {
     return (
         <section id="mySkills" className="bg-black">
             <div className="my_container">
                 <div className={styles.mySkills}>
-                    <h2 className="title">My skills</h2>
+                    <h2 className="title">
+                        <Translate id="homepage.skills.title">
+                            My skills
+                        </Translate>
+                    </h2>
                     <div className={styles.skills}>
                         {/* HTML */}
                         <div className={`${styles.skillContainer} ${styles.skillFlip}`}>
@@ -17,12 +22,27 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.html.title">
+                                            How I use this Skill
+                                        </Translate>
+                                    </h3>
                                     <ul>
-                                        <li>User-friendly navigation menus</li>
-                                        <li>Responsive web design</li>
-                                        <li>Contact forms and login pages</li>
-                                        <li>Transitions, animations and hover effect</li>
+                                        <li>
+                                            <Translate id="homepage.skills.html.list.1">
+                                                Structured layouts with semantic HTML
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.html.list.2">
+                                                Fast-loading, accessible pages
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.html.list.3">
+                                                Forms, menus, and interactive sections that just work
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -37,12 +57,27 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.css.title">
+                                            Where I apply it
+                                        </Translate>
+                                    </h3>
                                     <ul>
-                                        <li>User-friendly navigation menus</li>
-                                        <li>Responsive web design</li>
-                                        <li>Contact forms and login pages</li>
-                                        <li>Transitions, animations and hover effect</li>
+                                        <li>
+                                            <Translate id="homepage.skills.css.list.1">
+                                                Modern layouts with Flexbox and Grid
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.css.list.2">
+                                                Simple, consistent styles that just work
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.css.list.3">
+                                                Smooth animations and transitions
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,12 +92,27 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.docusaurus.title">
+                                            Practical use
+                                        </Translate>
+                                    </h3>
                                     <ul>
-                                        <li>search functionality</li>
-                                        <li>static website and customization</li>
-                                        <li>tags, categories and RSS feeds</li>
-                                        <li>translation</li>
+                                        <li>
+                                            <Translate id="homepage.skills.docusaurus.list.1">
+                                                Custom static sites with React
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.docusaurus.list.2">
+                                                Search, tags, and i18n configuration
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.docusaurus.list.3">
+                                                Flexible layouts and content structure
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +127,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.python.title">
+                                            Practical use
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>Build APIs</li>
                                         <li>spam filtering, recommendation systems</li>
@@ -97,7 +151,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.shell.title">
+                                            How i used this skill
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>Adding new users and setting their permissions</li>
                                         <li>Performing calculations or running</li>
@@ -116,7 +174,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.yaml.title">
+                                            How i used this skill
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>A Kubernetes deployment</li>
                                         <li>store settings like database connections</li>
@@ -136,7 +198,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.container.title">
+                                            How i used this skill
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>CI/CD piplines</li>
                                         <li>automate building, testing & deploying applications</li>
@@ -155,7 +221,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.cicd.title">
+                                            How i used this skill
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>Automated builds and tests</li>
                                         <li>pre-build actions for common tasks</li>
@@ -175,7 +245,11 @@ export function Skills() {
                                 </div>
                                 {/* BACK */}
                                 <div className={styles.skillBack}>
-                                    <h3>How i used this skill</h3>
+                                    <h3>
+                                        <Translate id="homepage.skills.security.title">
+                                            In practice
+                                        </Translate>
+                                    </h3>
                                     <ul>
                                         <li>simulate attacks and identify vulnerabilities</li>
                                         <li>Setting up multi-factor authentication</li>

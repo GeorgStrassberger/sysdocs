@@ -1,4 +1,5 @@
 import styles from './style.module.css';
+import Translate from "@docusaurus/Translate";
 
 export function Projects() {
     return (
@@ -6,7 +7,11 @@ export function Projects() {
             <div className="my_container">
                 <div className={styles.projectsContainer}>
                     <header>
-                        <h2 className="title">My projects</h2>
+                        <h2 className="title">
+                            <Translate id="homepage.projects.title">
+                                My projects
+                            </Translate>
+                        </h2>
                         {/*<p className="description">Where I applied my skills</p>*/}
                     </header>
                     <div className={styles.projects}>
@@ -70,8 +75,10 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/baby_toy.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                Babyshop ist ein Beispielprojekt, das zeigt, wie eine Django-Webanwendung mithilfe von Docker containerisiert und bereitgestellt wird.
-                                Das Repository enthält eine vollständige Anleitung zum Erstellen eines Docker-Images, Starten eines Containers und Verwalten der Anwendung über das Django-Admin-Dashboard.
+                                Babyshop ist ein Beispielprojekt, das zeigt, wie eine Django-Webanwendung mithilfe von
+                                Docker containerisiert und bereitgestellt wird.
+                                Das Repository enthält eine vollständige Anleitung zum Erstellen eines Docker-Images,
+                                Starten eines Containers und Verwalten der Anwendung über das Django-Admin-Dashboard.
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/da-projects/baby-tools">Documentation</a>
@@ -108,7 +115,11 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/truck_signs_api.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                Truck Signs API ist eine Django-basierte Webanwendung für einen Online-Shop, der vorgefertigte und personalisierte Vinyl-Aufkleber für Lkw anbietet. Das Projekt demonstriert den vollständigen Aufbau einer containerisierten Anwendung mit Docker, bestehend aus einer PostgreSQL-Datenbank und einer Django-API, die über ein Admin-Dashboard verwaltet wird.
+                                Truck Signs API ist eine Django-basierte Webanwendung für einen Online-Shop, der
+                                vorgefertigte und personalisierte Vinyl-Aufkleber für Lkw anbietet. Das Projekt
+                                demonstriert den vollständigen Aufbau einer containerisierten Anwendung mit Docker,
+                                bestehend aus einer PostgreSQL-Datenbank und einer Django-API, die über ein
+                                Admin-Dashboard verwaltet wird.
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/da-projects/truck-signs-api">Documentation</a>
@@ -140,7 +151,10 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/minecraft.png" alt="Minecraft"/>
                             <article className={styles.description}>
-                                Minecraft Server Hosting (Java Edition) bietet eine vollständige, Docker-basierte Serverlösung für die Minecraft Java Edition, ohne auf vorgefertigte Images zurückzugreifen. Der Server wird direkt aus der offiziellen server.jar von Mojang über den SHA1-Hash erstellt und lässt sich vollständig über eine .env-Datei konfigurieren.
+                                Minecraft Server Hosting (Java Edition) bietet eine vollständige, Docker-basierte
+                                Serverlösung für die Minecraft Java Edition, ohne auf vorgefertigte Images
+                                zurückzugreifen. Der Server wird direkt aus der offiziellen server.jar von Mojang über
+                                den SHA1-Hash erstellt und lässt sich vollständig über eine .env-Datei konfigurieren.
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/da-projects/minecraft">Documentation</a>
@@ -173,7 +187,11 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/wordpress.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                WordPress Docker Example ist ein einfaches Docker-Compose-Beispiel, das zeigt, wie eine WordPress-Installation zusammen mit einer MariaDB-Datenbank und dem Adminer-Interface gestartet werden kann. Das Projekt dient als leicht verständliche Vorlage für das Hosting einer WordPress-Umgebung in Containern mit vollständig konfigurierbaren Umgebungsvariablen.
+                                WordPress Docker Example ist ein einfaches Docker-Compose-Beispiel, das zeigt, wie eine
+                                WordPress-Installation zusammen mit einer MariaDB-Datenbank und dem Adminer-Interface
+                                gestartet werden kann. Das Projekt dient als leicht verständliche Vorlage für das
+                                Hosting einer WordPress-Umgebung in Containern mit vollständig konfigurierbaren
+                                Umgebungsvariablen.
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/da-projects/wordpress">Documentation</a>
@@ -205,7 +223,10 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/c_docker.png" alt="Conduit"/>
                             <article className={styles.description}>
-                                Conduit ist eine vollständige Fullstack-Webanwendung mit Angular-Frontend und Django-Backend, die vollständig Dockerisiert bereitgestellt wird. Das Projekt demonstriert, wie Frontend und Backend über docker compose orchestriert und über separate Container gemeinsam betrieben werden können.
+                                Conduit ist eine vollständige Fullstack-Webanwendung mit Angular-Frontend und
+                                Django-Backend, die vollständig Dockerisiert bereitgestellt wird. Das Projekt
+                                demonstriert, wie Frontend und Backend über docker compose orchestriert und über
+                                separate Container gemeinsam betrieben werden können.
                             </article>
                             <div className={styles.linkGroup}>
                                 <a className={styles.link} href="/docs/da-projects/conduit">Documentation</a>

@@ -18,3 +18,11 @@ Default Shell is **bash**.
 > You can use either of the following forms:
 > - `kubectl <command> <resource-type> <resource-name> [flags]`
 > - `kubectl <command> <resource-type>/<resource-name> [flags]`
+ 
+---
+
+## Overview
+
+### Steps
+
+![steps.png](../img/steps.png)

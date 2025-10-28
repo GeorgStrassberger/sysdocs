@@ -1,11 +1,16 @@
 import styles from './style.module.css';
+import Translate from "@docusaurus/Translate";
 
 export function Contact() {
     return (
         <section id="contact" className="bg-black">
             <div className="my_container">
                 <div className={styles.contact}>
-                    <h2 className="title">Contect me</h2>
+                    <h2 className="title">
+                        <Translate id="homepage.contact.title">
+                        Contect me
+                        </Translate>
+                    </h2>
                     <article className={styles.article}>
                         <div className={styles.info}>
                             <p className={styles.infoTitle}>Include the Information like:</p>

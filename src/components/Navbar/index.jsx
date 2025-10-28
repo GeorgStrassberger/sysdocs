@@ -36,16 +36,16 @@ export function Navbar() {
                     {/* Desktop-Links (>= 992px) */}
                     <div className={styles.links}>
                         <a className={styles.link} href="#aboutMe">
-                            <Translate id="navbar.aboutMe">About Me</Translate>
+                            <Translate id="homepage.navbar.aboutMe">About Me</Translate>
                         </a>
                         <a className={styles.link} href="#mySkills">
-                            <Translate id="navbar.skills">My skills</Translate>
+                            <Translate id="homepage.navbar.skills">My skills</Translate>
                         </a>
                         <a className={styles.link} href="#myProjects">
-                            <Translate id="navbar.projects">My projects</Translate>
+                            <Translate id="homepage.navbar.projects">My projects</Translate>
                         </a>
                         <a className={styles.link} href="#contact">
-                            <Translate id="navbar.contact">Contact</Translate>
+                            <Translate id="homepage.navbar.contact">Contact</Translate>
                         </a>
                         {/* Language Switcher */}
                         <div className={styles.localeSwitch}>
@@ -105,16 +105,16 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
             >
                 <a className={styles.menuLink} href="#aboutMe">
-                    <Translate id="navbar.aboutMe">About Me</Translate>
+                    <Translate id="homepage.navbar.aboutMe">About Me</Translate>
                 </a>
                 <a className={styles.menuLink} href="#mySkills">
-                    <Translate id="navbar.skills">My skills</Translate>
+                    <Translate id="homepage.navbar.skills">My skills</Translate>
                 </a>
                 <a className={styles.menuLink} href="#myProjects">
-                    <Translate id="navbar.projects">My projects</Translate>
+                    <Translate id="homepage.navbar.projects">My projects</Translate>
                 </a>
                 <a className={styles.menuLink} href="#contact">
-                    <Translate id="navbar.contact">Contact</Translate>
+                    <Translate id="homepage.navbar.contact">Contact</Translate>
                 </a>
                 {/* Sprachauswahl auch mobil */}
                 <div className={styles.menuLocaleSwitch}>
