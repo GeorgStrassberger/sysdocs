@@ -1,3 +1,31 @@
+.localeSwitch {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.localeBtn {
+    color: var(--white);
+    font-size: clamp(22px, 2.5vw, 24px);
+    cursor: pointer;
+    padding: 0 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.localeActive {
+    color: var(--black);
+    font-size: clamp(22px, 2.5vw, 24px);
+    cursor: default;
+    padding: 0rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    font-weight: 600;
+    opacity: 1;
+}
+
 .navbar {
     position: relative;
     z-index: 50;
@@ -10,19 +38,19 @@
     .logo {
         color: var(--white);
 
+        .logoImg {
+            height: 28px;
+            margin-right: 0.5rem;
+        }
+
         &:hover .link {
             color: var(--black);
             text-decoration: none;
-
-            .linkIcon {
-                fill: var(--black);
-            }
         }
 
         .link {
             text-transform: uppercase;
             color: inherit;
-            font-family: var(--f-sans), sans-serif;
             font-weight: 600;
             font-size: clamp(22px, 2.5vw, 24px);
             line-height: var(--lh);
@@ -42,7 +70,6 @@
         .link {
             text-transform: uppercase;
             color: var(--white);
-            font-family: var(--f-sans), sans-serif;
             font-weight: 600;
             font-size: clamp(22px, 2.5vw, 24px);
             line-height: var(--lh);
@@ -102,7 +129,6 @@
 
 .menu .menuLink {
     color: var(--white);
-    font-family: var(--f-sans), sans-serif;
     font-weight: 600;
     font-size: clamp(22px, 2.5vw, 24px);
     line-height: var(--lh);
@@ -130,6 +156,7 @@
         .links {
             display: flex;
             gap: 4rem;
+            align-items: center;
         }
     }
 

@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.projectSidebar.category.Conduit": {
+    "message": "Conduit",
+    "description": "The label for category Conduit in sidebar projectSidebar"
+  },
+  "sidebar.juiceShopSidebar.category.1 Star": {
+    "message": "1 Star",
+    "description": "The label for category 1 Star in sidebar juiceShopSidebar"
+  },
+  "sidebar.juiceShopSidebar.category.2 Star": {
+    "message": "2 Star",
+    "description": "The label for category 2 Star in sidebar juiceShopSidebar"
+  },
+  "sidebar.juiceShopSidebar.category.3 Star": {
+    "message": "3 Star",
+    "description": "The label for category 3 Star in sidebar juiceShopSidebar"
+  },
+  "sidebar.juiceShopSidebar.category.Extra Aufgaben": {
+    "message": "Extra Aufgaben",
+    "description": "The label for category Extra Aufgaben in sidebar juiceShopSidebar"
+  }
+}

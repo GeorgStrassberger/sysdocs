@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "GS",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "georg-emoji-logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Projects": {
+    "message": "Projects",
+    "description": "Navbar item with label Projects"
+  },
+  "item.label.Juice Shop": {
+    "message": "Juice Shop",
+    "description": "Navbar item with label Juice Shop"
+  },
+  "item.label.Pattern": {
+    "message": "Pattern",
+    "description": "Navbar item with label Pattern"
+  },
+  "item.label.Tools": {
+    "message": "Tools",
+    "description": "Navbar item with label Tools"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

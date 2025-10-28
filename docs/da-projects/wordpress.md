@@ -1,4 +1,4 @@
-# WordPress
+# Wordpress
 
 An Example for a simple `docker compose` setup. To start a Wordpress application with a database and browser access.
 
@@ -6,7 +6,7 @@ An Example for a simple `docker compose` setup. To start a Wordpress application
 
 ## Table of Contents
 
-- [WordPress](#wordpress)
+- [Wordpress](#wordpress)
     - [Table of Contents](#table-of-contents)
     - [Description](#description)
     - [Prerequisites](#prerequisites)
@@ -131,24 +131,24 @@ After starting the containers, you can:
 - URL: http://localhost:8081
 
 **Normal User Login:**
-   ```bash
-   User-Login (user access):
-   System:         MySQL       #DB type
-   Server:         mariadb     #Docker service name of the database container
-   Username:       wp_user     #MYSQL_USER
-   Password:       wp_pass     #MYSQL_PASSWORD
-   Datenbank:      wordpress   #MYSQL_DATABASE
-   ```
+```bash
+User-Login (user access):
+System:         MySQL       #DB type
+Server:         mariadb     #Docker service name of the database container
+Username:       wp_user     #MYSQL_USER
+Password:       wp_pass     #MYSQL_PASSWORD
+Datenbank:      wordpress   #MYSQL_DATABASE
+```
 
 **Root Login:**
-   ```bash
-   Root-Login (administrator access):
-   System:         MySQL       #DB type
-   Server:         mariadb     #Docker service name of the database container
-   Username:       root        #MYSQL_USER
-   Password:       root_pass   #MYSQL_ROOT_PASSWORD
-   Datenbank:      (empty)
-   ```
+```bash
+Root-Login (administrator access):
+System:         MySQL       #DB type
+Server:         mariadb     #Docker service name of the database container
+Username:       root        #MYSQL_USER
+Password:       root_pass   #MYSQL_ROOT_PASSWORD
+Datenbank:      (empty)
+```
 
 ---
 

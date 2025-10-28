@@ -20,7 +20,7 @@ export function Footer() {
                             <span className={styles.text}>{ getCurrentYear() }</span>
                         </li>
                         <li>
-                            <a className={styles.link} href="#">
+                            <a className={styles.link} href="legalnotice">
                                 Legal notice
                             </a>
                         </li>

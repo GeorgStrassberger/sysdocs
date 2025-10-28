@@ -31,7 +31,6 @@
     font-size: clamp(48px, 5vw, 88px);
     font-weight: 700;
     line-height: var(--lh);
-    font-family: var(--f-sans), sans-serif;
     width: 100%;
     margin: 0;
 }

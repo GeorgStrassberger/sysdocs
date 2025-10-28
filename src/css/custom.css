@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -14,6 +22,7 @@
     --ifm-color-primary-lighter: #359962;
     --ifm-color-primary-lightest: #3cad6e;
     --ifm-code-font-size: 95%;
+    --ifm-font-family-base: 'Quicksand', sans-serif;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --black: #262E34;
     --gray: #313D47;
@@ -21,8 +30,6 @@
     --blue: #266AD9;
     --blue-light: #91C9F3;
     --white: #FFFFFF;
-    --f-sans: 'Quicksand', system-ui, -apple-system, sans-serif;
-    --f-mono: monospace;
     --lh: 120%;
 }
 
@@ -38,20 +45,11 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-@font-face {
-    font-family: 'Quicksand';
-    src:url('/fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 700;
-    font-display: swap;
-    font-style: normal;
-}
-
 * {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--f-sans), sans-serif;
     min-height: 100dvh;
 }
 
@@ -72,7 +70,6 @@ body {
 
 .title {
     color: var(--white);
-    font-family: var(--f-sans), sans-serif;
     font-size: clamp(40px, 2.4vw, 64px);
     font-weight: 500;
     line-height: var(--lh);

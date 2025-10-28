@@ -23,8 +23,8 @@ const sidebars = {
         'da-projects/vserver',
         'da-projects/baby-tools',
         'da-projects/truck-signs-api',
-        'da-projects/minecraft',
         'da-projects/wordpress',
+        'da-projects/minecraft',
         'da-projects/gh-action',
         {
             type: 'category',
@@ -51,7 +51,7 @@ const sidebars = {
                 'juice-shop/star1/missing_encoding',
                 'juice-shop/star1/bully_chatbot',
                 'juice-shop/star1/bonus_payload',
-                'juice-shop/star1/privace_policy',
+                'juice-shop/star1/privacy_policy',
                 'juice-shop/star1/exposed_matrics',
                 'juice-shop/star1/repetitive_registration',
                 'juice-shop/star1/outdated_allowlist',
@@ -90,7 +90,17 @@ const sidebars = {
     ],
     toolSidebar: [
         'tools/powershell',
-        'tools/docker'
+        'tools/docker',
+        {
+            type: 'category',
+            label: 'Kubernetes',
+            items: [
+                'tools/kubernetes/index',
+                'tools/kubernetes/home-setup',
+                'tools/kubernetes/deployment',
+                'tools/kubernetes/service'
+            ],
+        },
     ],
 };
 

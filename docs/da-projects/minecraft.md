@@ -8,7 +8,7 @@ This project provides a complete Minecraft Java Edition server setup using Docke
 
 ## Table of Contents
 
-- [Minecraft Server Hosting via Docker (Java Edition)](#minecraft-server-hosting-via-docker-java-edition)
+- [Minecraft](#minecraft)
     - [Table of Contents](#table-of-contents)
     - [Overview](#overview)
     - [Prerequisites](#prerequisites)
@@ -69,52 +69,57 @@ https://launchermeta.mojang.com/mc/game/version_manifest.json
 
 This is a JSON file containing all official versions.
 
-```js
-latest:	{ release: "1.21.8", snapshot: "25w31a" },
-versions: [
-   { id: "25w31a", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/6ec665b6b0b60df1d0ffe92812bf7a860a4953ea/25w31a.json", … },
-   { id: "1.21.8", type: "release", url: "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json", … },
-   { id: "1.21.8-rc1", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/d2573833c5dc21fb1e9033b3d7b912168786cd1b/1.21.8-rc1.json", … },
-   { id: "1.21.7", type: "release", url: "https://piston-meta.mojang.com/v1/packages/cd36d4744092cc0cca8d3fbf8e9222b0fdc00541/1.21.7.json", … },
-   { id: "1.21.7-rc2", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/b9e024e78ab57a6d1e72c7d047d25c3140adc439/1.21.7-rc2.json", … },
-   { id: "1.21.7-rc1", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/6b949410815e34f47301eb610b8063833aac9473/1.21.7-rc1.json", … },
-   { id: "1.21.6", type: "release", url: "https://piston-meta.mojang.com/v1/packages/e2a26a825f525a8cc72066d632d07aa8af67b19a/1.21.6.json", … },
-   { id: "1.21.6-rc1", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/dda6dc2c16765e4a3819a9f985baf659ee14bd2d/1.21.6-rc1.json", … },
-   { id: "1.21.6-pre4", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/4fa7a83b157486431d8e4267fe95fe9dcabf0d49/1.21.6-pre4.json", … },
-   { id: "1.21.6-pre3", type: "snapshot", url: "https://piston-meta.mojang.com/v1/packages/938dac32ffc4a6c064c2cbf89e9dfd1920ec8a50/1.21.6-pre3.json", … }
-]
+```json
+{
+    "latest":	{ "release": "1.21.8", "snapshot": "25w31a" },
+    "versions": [
+       { "id": "25w31a", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/6ec665b6b0b60df1d0ffe92812bf7a860a4953ea/25w31a.json", … },
+       { "id": "1.21.8", "type": "release", "url": "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json", … },
+       { "id": "1.21.8-rc1", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/d2573833c5dc21fb1e9033b3d7b912168786cd1b/1.21.8-rc1.json", … },
+       { "id": "1.21.7", "type": "release", "url": "https://piston-meta.mojang.com/v1/packages/cd36d4744092cc0cca8d3fbf8e9222b0fdc00541/1.21.7.json", … },
+       { "id": "1.21.7-rc2", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/b9e024e78ab57a6d1e72c7d047d25c3140adc439/1.21.7-rc2.json", … },
+       { "id": "1.21.7-rc1", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/6b949410815e34f47301eb610b8063833aac9473/1.21.7-rc1.json", … },
+       { "id": "1.21.6", "type": "release", "url": "https://piston-meta.mojang.com/v1/packages/e2a26a825f525a8cc72066d632d07aa8af67b19a/1.21.6.json", … },
+       { "id": "1.21.6-rc1", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/dda6dc2c16765e4a3819a9f985baf659ee14bd2d/1.21.6-rc1.json", … },
+       { "id": "1.21.6-pre4", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/4fa7a83b157486431d8e4267fe95fe9dcabf0d49/1.21.6-pre4.json", … },
+       { "id": "1.21.6-pre3", "type": "snapshot", "url": "https://piston-meta.mojang.com/v1/packages/938dac32ffc4a6c064c2cbf89e9dfd1920ec8a50/1.21.6-pre3.json", … }
+    ]
+}
 ```
 
 
 
 2. Find your version (e.g. `id:1.21.8` & `type: release`) in the list:
 
-```js
+```json
 {
-   id: "1.21.8",
-   type: "release",
-   url: "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json",
-   time: "2025-07-17T12:13:03+00:00",
-   releaseTime: "2025-07-17T12:04:02+00:00"
+   "id": "1.21.8",
+   "type": "release",
+   "url": "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json",
+   "time": "2025-07-17T12:13:03+00:00",
+   "releaseTime": "2025-07-17T12:04:02+00:00"
 }
-
 ```
 
 1. Copy the associated url, for example:
 
 ```json
-"url": "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json"
+{
+  "url": "https://piston-meta.mojang.com/v1/packages/24b08e167c6611f7ad895ae1e8b5258f819184aa/1.21.8.json"
+}
 ```
 
 4. Open that URL and look for:
 
 ```json
-"downloads": {
-   "server": {
-      "sha1": "6bce4ef400e4efaa63a13d5e6f6b500be969ef81",
-      "url": "https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar"
-   },
-   "id":"1.21.8"
+{
+    "downloads": {
+       "server": {
+          "sha1": "6bce4ef400e4efaa63a13d5e6f6b500be969ef81",
+          "url": "https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar"
+       },
+       "id":"1.21.8"
+    }
 }
 ```
 
@@ -179,5 +184,3 @@ ping: 51.56 ms
 
 3. Restart the server and verify world data persists
 4. Stop the container and confirm it restarts automatically
-
----

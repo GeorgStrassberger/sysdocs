@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
     title: 'DevOps-Zone',
     tagline: 'System Documentation',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/georg-emoji-md.png',
     future: {
         v4: true,
     },
@@ -12,11 +12,27 @@ const config = {
     baseUrl: '/',
     organizationName: 'GEST',
     projectName: 'SysDocs',
-    onBrokenLinks: 'throw',
-    onBrokenMarkdownLinks: 'warn',
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'warn',
+            onBrokenMarkdownImages: 'warn',
+        }
+    },
     i18n: {
         defaultLocale: 'en',
-        locales: ['en'],
+        locales: ['en', 'de'],
+        localeConfigs: {
+            en: {
+                label: 'English',
+                direction: 'ltr',
+                htmlLang: 'en-US',
+            },
+            de: {
+                label: 'Deutsch',
+                direction: 'ltr',
+                htmlLang: 'de-DE',
+            },
+        },
     },
     presets: [
         [
@@ -41,7 +57,7 @@ const config = {
                     onUntruncatedBlogPosts: 'warn',
                 },
                 theme: {
-                    customCss: './src/css/custom.css',
+                    customCss: ['./src/css/custom.css'],
                 },
             }),
         ],
@@ -83,6 +99,11 @@ const config = {
                         position: 'left',
                         label: 'Tools',
                     },
+                    {
+                        type: 'localeDropdown',
+                        position: 'right',
+                    }
+                    ,
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/GeorgStrassberger',

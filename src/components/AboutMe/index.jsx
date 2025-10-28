@@ -1,4 +1,5 @@
 import styles from './style.module.css';
+import Translate from "@docusaurus/Translate";
 
 export function AboutMe() {
     return (
@@ -20,7 +21,7 @@ export function AboutMe() {
                             <br/> Why are you passionate about coding? Do you habe a deep interest in games? What is
                             your programming skills? Are you constantly learning and keeping up to date?
                         </p>
-                        <a href="#contact" className={styles.button}>Contact me</a>
+                        <a href="#contact" className={styles.button}><Translate id="homepage.about.link">Contact me</Translate></a>
                     </article>
                     {/* PHOTO */}
                     <aside className={styles.aside}>

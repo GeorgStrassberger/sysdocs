@@ -1,7 +1,6 @@
 .mySkills {
     padding-block: 3rem;
     color: var(--white);
-    font-family: var(--f-sans), sans-serif;
 
     .skills {
         color: var(--white);
