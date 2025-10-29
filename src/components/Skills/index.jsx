@@ -204,7 +204,7 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.yaml.title">
-                                            Wie ich YAML einsetze
+                                            How I use YAML
                                         </Translate>
                                     </h3>
                                     <ul>

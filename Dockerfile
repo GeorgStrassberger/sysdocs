@@ -1,5 +1,5 @@
-# Basis-Image
-FROM node:22
+# --- Schritt 1: Build Docusaurus ---
+FROM node:24-alpine AS builder
 
 # Arbeitsverzeichnis setzen
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Abhängigkeiten installieren
-RUN npm install
+RUN npm ci
 
 # Restliche Dateien kopieren
 COPY . .
@@ -16,11 +16,18 @@ COPY . .
 # Docusaurus-Projekt builden
 RUN npm run build
 
-# Webserver installieren (serve)
-RUN npm install -g serve
+# --- Schritt 2: Serve with nginx ---
+FROM nginx:alpine
 
-# Port freigeben
-EXPOSE 4000
+# Webserver konfiguration kopieren
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Fertige Datein von Schritt 1, dem Webserver übergeben
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Port definieren
+EXPOSE 80
 
 # Startbefehl
-CMD ["serve", "-s", "build", "-l", "4000"]
+CMD ["nginx", "-g", "daemon off;"]
