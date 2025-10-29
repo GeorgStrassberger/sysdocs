@@ -1,41 +1,98 @@
-# Website
+# 🧩 SysDocs – DevOps-Zone Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+[![Build & Deploy](https://github.com/GeorgStrassberger/SysDocs/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/GeorgStrassberger/SysDocs/actions)
+[![Docker Image](https://img.shields.io/badge/ghcr.io%2Fgeorgstrassberger%2Fsysdocs-latest-blue)](https://ghcr.io/georgstrassberger/sysdocs)
+[![Version](https://img.shields.io/github/v/tag/GeorgStrassberger/SysDocs?label=version&color=brightgreen)](https://github.com/GeorgStrassberger/SysDocs/releases)
 
-## Installation
+📖 **System- & Projekt-Dokumentation für DevOps, Webentwicklung und IoT.**  
+Bereitgestellt als Docusaurus-Webseite mit Docker-Deployment und automatischem CI/CD über GitHub Actions.
+
+---
+
+## 🚀 Features
+
+- 🌐 **Mehrsprachig (i18n)** – Englisch & Deutsch via Docusaurus
+- 🧱 **Containerized** – Docker-basierter Build mit Nginx für Production
+- 🔁 **CI/CD Integration** – GitHub Actions + GHCR Deployment auf Hetzner
+- ⚙️ **Traefik Reverse Proxy** – Automatisches HTTPS via Let’s Encrypt
+- 🧩 **Modulare Docusaurus-Struktur** – Docs, Blog, Projekte & Tools
+- 💡 **Automatische Versionierung** – Tag-basierte Releases (`v1.0.0`, `v1.1.0`, …)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technologie                             | Description                                |
+|-----------------------------------------|--------------------------------------------|
+| **[Docusaurus](https://docusaurus.io)** | Static Site Generator (React-basiert)      |
+| **Docker / Nginx**                      | Containerisierung & statische Auslieferung |
+| **Traefik**                             | Reverse Proxy + HTTPS                      |
+| **GitHub Actions**                      | Automatisierte Builds & Deployments        |
+| **GHCR (GitHub Container Registry)**    | Docker Image Hosting                       |
+| **i18n**                                | Mehrsprachige Inhalte (EN/DE)              |
+
+---
+
+## Image from GHCR
 
 ```bash
-yarn
+docker pull ghcr.io/georgstrassberger/sysdocs:latest
 ```
 
-## Local Development
+---
+
+## Preview
+
+Docs
+![docs_preview.png](static/img/docs_preview.png)
+Page
+![page_preview.png](static/img/page_preview.png)
+
+---
+
+## 🧰 Local Setup
+
+### Prerequisites
+
+- Node.js ≥ 18
+- npm oder yarn
+- Docker (optional für Build-Test)
+
+### Start Devolpment
+
+Clone this repository:
 
 ```bash
-yarn start
+git clone https://github.com/GeorgStrassberger/sysdocs.git
+cd ./sysdocs
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+Install dependencies and start development Server:
 
 ```bash
-yarn build
+npm install
+npm run dev
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+Build and start a production Server:
 
 ```bash
-USE_SSH=true yarn deploy
+npm run build
+npm run serve
 ```
 
-Not using SSH:
+---
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
+## Author
+
+```text
+
+  ██████╗   ███████╗   ███████╗  █████████╗
+ ██╔════╝   ██╔════╝  ██╔═════╝  ╚══██╔═══╝
+ ██║  ███╗  █████╗    ╚█████╗       ██║
+ ██║   ██║  ██╔══╝     ╚═══██╗      ██║
+ ██║   ██║  ██║             ██╗     ██║
+ ╚██████╔╝  ███████╗   ███████║     ██║
+  ╚═════╝   ╚══════╝   ╚══════╝     ╚═╝
+
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
