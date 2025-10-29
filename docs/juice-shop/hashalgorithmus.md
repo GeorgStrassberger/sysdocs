@@ -1,11 +1,11 @@
-# Hash Algorithmus
+# Juice Shop Hash Algorithmus
 
-Welchen Hash Algroithmus verwendet der **OWASP Juice Shop**?
+Which `HASH` algorithm does the **OWASP Juice Shop** use?
 
 ---
 
 Open `Burpsuite` catch the response error message, copy the token.
-Use Hashcat in your terminal. If it matched you can see the Hash.Mode (MD5) 
+Use Hashcat in your terminal. If it matched, you can see the Hash.Mode (MD5) 
 
 ![catched_hash.png](img/catched_hash.png)
 

@@ -140,9 +140,9 @@ docker pull imagename
 docker start imagename -options
     --name=Containername
     --restart=option
-    -p Portbinding
+    -p portbinding
     -v volume
-    -d detached (im hintergrund)
+    -d detached
 ````
 
 

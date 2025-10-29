@@ -374,8 +374,7 @@
     "description": "my sills headline"
   },
   "homepage.skills.html.title": {
-    "message": "Was ich damit baue",
-    "description": "html skill"
+    "message": "Wie ich es einsetze"
   },
   "homepage.skills.html.list.1": {
     "message": "Strukturierte Layouts mit semantischem HTML"
@@ -387,8 +386,7 @@
     "message": "Formulare, Menüs und Interaktionen, die einfach funktionieren"
   },
   "homepage.skills.css.title": {
-    "message": "Wo ich es einsetze",
-    "description": "Docusaurus skill"
+    "message": "Wie ich es gestalte"
   },
   "homepage.skills.css.list.1": {
     "message": "Moderne Layouts mit Flexbox und Grid"
@@ -400,8 +398,7 @@
     "message": "Weiche Animationen und Übergänge"
   },
   "homepage.skills.docusaurus.title": {
-    "message": "Wie ich es einsetze",
-    "description": "css skill"
+    "message": "Wie ich damit Seiten baue"
   },
   "homepage.skills.docusaurus.list.1": {
     "message": "Eigene statische Seiten mit React"
@@ -413,83 +410,130 @@
     "message": "Flexible Layouts und Inhaltsstruktur"
   },
   "homepage.skills.python.title": {
-    "message": "Wo ich es einsetze"
+    "message": "Was ich mit Python entwickle"
   },
   "homepage.skills.python.list.1": {
-    "message": "skill"
+    "message": "IoT-Mikrocontroller"
   },
   "homepage.skills.python.list.2": {
-    "message": "skill"
+    "message": "Prototypische CLI-Tools und Sicherheits-Utilities"
   },
   "homepage.skills.python.list.3": {
-    "message": "skill"
+    "message": "APIs mit Flask/Django"
+  },
+  "homepage.skills.python.list.4": {
+    "message": "Leichte Automatisierungs-Skripte und System-Tools"
   },
   "homepage.skills.shell.title": {
-    "message": "Eingesetzt für"
+    "message": "Wie ich mit Shell automatisiere"
   },
   "homepage.skills.shell.list.1": {
-    "message": "skill"
+    "message": "Schreiben von entrypoint skripten zur Konfiguration von Docker"
   },
   "homepage.skills.shell.list.2": {
-    "message": "skill"
+    "message": "Anpassen von Konfigurationsdateien (z. B. Berechtigungen, Variablen, Systemdienste)"
   },
   "homepage.skills.shell.list.3": {
-    "message": "skill"
+    "message": "Automatisierung von Deployment- und Startvorgängen auf Linux-Systemen"
   },
   "homepage.skills.yaml.title": {
-    "message": "Eingesetzt für"
+    "message": "How I use YAML"
   },
   "homepage.skills.yaml.list.1": {
-    "message": "skill"
+    "message": "Kubernetes-Deployments und -Services in YAML"
   },
   "homepage.skills.yaml.list.2": {
-    "message": "skill"
+    "message": "Ablegen von Konfigurationswerten wie Datenbank-Verbindungen und Zugangsdaten"
   },
   "homepage.skills.yaml.list.3": {
-    "message": "skill"
+    "message": "Verwalten von umgebungsspezifischen Variablen für Dev, Test und Prod"
   },
   "homepage.skills.container.title": {
-    "message": "Was ich damit baue"
+    "message": "Wie ich Container einsetze"
   },
   "homepage.skills.container.list.1": {
-    "message": "skill"
+    "message": "Services in Containern (Docker) bauen und betreiben"
   },
   "homepage.skills.container.list.2": {
-    "message": "skill"
+    "message": "Verwaltung von schlanken Clustern und Workloads mit k3s"
   },
   "homepage.skills.container.list.3": {
-    "message": "skill"
+    "message": "Einsatz von Containern in Deployment- und Automatisierungs-Workflows"
   },
   "homepage.skills.cicd.title": {
-    "message": "Wie ich es einsetze"
+    "message": "Wie ich CI/CD umsetze"
   },
   "homepage.skills.cicd.list.1": {
-    "message": "skill"
+    "message": "Automatisierung von Builds, Tests und Deployments über CI/CD-Pipelines"
   },
   "homepage.skills.cicd.list.2": {
-    "message": "skill"
+    "message": "Ausführen von Pre-Build- und Validierungsschritten für konsistente Ergebnisse"
   },
   "homepage.skills.cicd.list.3": {
-    "message": "skill"
+    "message": "Auslösen von Workflows bei Pushes, Pull Requests oder geplanten Events"
   },
   "homepage.skills.security.title": {
-    "message": "Eingesetzt für"
+    "message": "Wie ich Sicherheit anwende"
   },
   "homepage.skills.security.list.1": {
-    "message": "skill"
+    "message": "Simulation von Angriffen, um Schwachstellen zu erkennen und zu verstehen"
   },
   "homepage.skills.security.list.2": {
-    "message": "skill"
+    "message": "Härtung von Login- und Zugriffskontrollen"
   },
   "homepage.skills.security.list.3": {
-    "message": "skill"
+    "message": "Einsatz von Security-Tools zur Analyse von Konfigurationen und Berechtigungen"
   },
   "homepage.projects.title": {
     "message": "Projekte",
     "description": "my projects headline"
   },
+  "homepage.projects.link.documentation": {
+    "message": "Dokumentation"
+  },
+  "homepage.projects.vserver.description": {
+    "message": "vServer Setup Guide ist eine praxisnahe Anleitung zur Einrichtung eines eigenen virtuellen Servers.\nSchritt für Schritt wird erklärt, wie man per SSH eine sichere Verbindung herstellt, einen Nginx-Webserver konfiguriert und GitHub für Deployments integriert.\nDabei werden typische Aufgaben wie Benutzerverwaltung, Rechtevergabe und SSL-Setup behandelt.\nDie Anleitung richtet sich an Einsteiger, die ihre Entwicklungs- oder Testumgebung selbstständig aufsetzen möchten – mit Beispielen für Linux und Windows."
+  },
+  "homepage.projects.babytools.description": {
+    "message": "Baby Tools Shop ist ein Beispielprojekt, das zeigt, wie eine Django-Webanwendung in Docker-Containern entwickelt, getestet und bereitgestellt wird.\nDas Projekt umfasst eine vollständige Anleitung zur Erstellung eines Docker-Images, zum Starten der Container und zur Verwaltung der Anwendung über das Django-Admin-Interface.\nZiel war es, eine skalierbare und reproduzierbare Umgebung zu schaffen, die sich einfach auf unterschiedliche Systeme übertragen lässt – ideal für Lernzwecke und kleine Webprojekte."
+  },
+  "homepage.projects.trucksignsapi.description": {
+    "message": "Truck Signs API ist eine Django-basierte Webanwendung, die als Backend für einen Online-Shop dient, der Lkw-Aufkleber (Standard- und Sonderanfertigungen) anbietet.\nDas Projekt zeigt, wie eine containerisierte Anwendung mit Docker aufgebaut wird – bestehend aus einer PostgreSQL-Datenbank, einer Django-API und einem Admin-Dashboard zur Verwaltung von Produkten und Bestellungen.\nZiel war es, eine modulare, leicht wartbare und reproduzierbare Infrastruktur zu entwickeln, die sich sowohl lokal als auch auf einem Server betreiben lässt."
+  },
+  "homepage.projects.minecraft.description": {
+    "message": "Minecraft Server Hosting (Java Edition) ist ein vollständig Docker-basiertes Serverprojekt, das ohne vorgefertigte Images auskommt.\nDer Server wird direkt aus der offiziellen server.jar von Mojang über den SHA1-Hash erstellt, was höchste Transparenz und Kontrolle bietet.\nAlle Einstellungen – wie Version, Ports, Speicherlimits und Whitelist – werden zentral über eine .env-Datei konfiguriert.\nDas Projekt dient als Vorlage, um einen Minecraft-Server automatisiert, reproduzierbar und sicher in Containern zu betreiben."
+  },
+  "homepage.projects.wordpress.description": {
+    "message": "WordPress Docker Example ist ein leicht verständliches Docker-Compose-Projekt, das zeigt, wie eine vollständige WordPress-Umgebung in Containern bereitgestellt werden kann.\nDie Installation umfasst WordPress, eine MariaDB-Datenbank und das Adminer-Interface zur Datenbankverwaltung.\nAlle wichtigen Parameter wie Benutzer, Passwörter und Ports werden über Umgebungsvariablen gesteuert.\nDas Projekt dient als einfache Vorlage für das Hosting und Testen von WordPress-Instanzen in einer isolierten Container-Umgebung."
+  },
+  "homepage.projects.conduit.description": {
+    "message": "Conduit ist eine vollständige Full-Stack-Webanwendung mit Angular-Frontend und Django-Backend, die vollständig in Docker-Containern bereitgestellt wird.\nDas Projekt zeigt, wie mehrere Services – Frontend, Backend und Datenbank – über Docker Compose orchestriert werden können.\nDurch die Trennung der Komponenten entsteht eine saubere, modulare Architektur, die sich leicht erweitern, testen und in unterschiedlichen Umgebungen ausrollen lässt.\nConduit dient als praxisnahes Beispiel für modernes Web-Development mit containerisierter Infrastruktur."
+  },
+  "homepage.projects.juiceshop.description": {
+    "message": "OWASP Juice Shop ist eine absichtlich verwundbare Webanwendung, die zu Lern- und Testzwecken im Bereich Web Security entwickelt wurde.\nIn diesem Projekt betreibe ich Juice Shop in einer isolierten Umgebung, um Sicherheitsmechanismen, Schwachstellen und Angriffsvektoren realistisch zu analysieren.\nDabei kommen Docker-Container und Shell-Skripte zum Einsatz, um den Setup- und Reset-Prozess vollständig zu automatisieren.\nDas Projekt dient als praxisnahe Plattform, um Penetrationstests, Sicherheitsanalysen und Absicherungstechniken zu üben."
+  },
   "homepage.contactMe.title": {
-    "message": "Kontakt",
-    "description": "contact me headline"
+    "message": "Kontaktiere mich"
+  },
+  "homepage.contactMe.info.title": {
+    "message": "Bitte gib in deiner Nachricht folgende Informationen an:"
+  },
+  "homepage.contactMe.info.list.1": {
+    "message": "Ich freue mich über Jobangebote, Projekte oder gemeinsame Ideen."
+  },
+  "homepage.contactMe.info.list.2": {
+    "message": "Welche Rolle oder Art von Projekt suchst du?"
+  },
+  "homepage.contactMe.info.list.3": {
+    "message": "Wie du zum Team oder Projekt beitragen möchtest."
+  },
+  "homepage.contactMe.info.list.4": {
+    "message": "Ob du für Remote-Arbeit oder einen Umzug offen bist."
+  },
+  "homepage.contactMe.social.title": {
+    "message": "Ich freue mich auf deine Nachricht!"
+  },
+  "homepage.footer.legalNotice": {
+    "message": "Impressum"
   }
 }

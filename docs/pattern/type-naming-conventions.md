@@ -1,4 +1,4 @@
-# API Type Naming Conventions
+# Type Naming Conventions
 
 ***Übersicht:*** Meine Vorlage zur benennung der interface/type.
 

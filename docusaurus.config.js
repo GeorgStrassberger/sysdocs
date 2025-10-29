@@ -87,23 +87,23 @@ const config = {
                         position: 'left',
                         label: 'Juice Shop',
                     },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'patternSidebar',
-                        position: 'left',
-                        label: 'Pattern',
-                    },
+                    // {
+                    //     type: 'docSidebar',
+                    //     sidebarId: 'patternSidebar',
+                    //     position: 'left',
+                    //     label: 'Pattern',
+                    // },
                     {
                         type: 'docSidebar',
                         sidebarId: 'toolSidebar',
                         position: 'left',
                         label: 'Tools',
                     },
-                    {
-                        type: 'localeDropdown',
-                        position: 'right',
-                    }
-                    ,
+                    // {
+                    //     type: 'localeDropdown',
+                    //     position: 'right',
+                    // }
+                    // ,
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/GeorgStrassberger',
@@ -114,40 +114,52 @@ const config = {
             },
             footer: {
                 style: 'dark',
-                // links: [
-                //   {
-                //     title: 'Docs',
-                //     items: [
-                //       {
-                //         label: 'Tutorial',
-                //         to: '/docs/intro',
-                //       },
-                //     ],
-                //   },
-                //   {
-                //     title: 'Community',
-                //     items: [
-                //       {
-                //         label: 'X',
-                //         href: 'https://x.com/Ge_St_86',
-                //       },
-                //     ],
-                //   },
-                //   {
-                //     title: 'More',
-                //     items: [
-                //       {
-                //         label: 'Blog',
-                //         to: '/blog',
-                //       },
-                //       {
-                //         label: 'GitHub',
-                //         href: 'https://github.com/GeorgStrassberger',
-                //       },
-                //     ],
-                //   },
-                // ],
-                copyright: `Copyright © ${new Date().getFullYear()} Sysdocs.`,
+                links: [
+                    {
+                        title: 'Docs',
+                        items: [
+                            {
+                                label: 'Projects',
+                                to: '/docs/da-projects/overview',
+                            },
+                            {
+                                label: 'Juice Shop',
+                                to: '/docs/juice-shop',
+                            },
+                            {
+                                label: 'Tools',
+                                to: '/docs/tools/overview',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'LinkedIn',
+                                href: 'https://www.linkedin.com/in/georg-s-85b563196/',
+                            },
+                            {
+                                label: 'X',
+                                href: 'https://x.com/Ge_St_86',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'More',
+                        items: [
+                            // {
+                            //   label: 'Blog',
+                            //   to: '/blog',
+                            // },
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/GeorgStrassberger',
+                            },
+                        ],
+                    },
+                ],
+                copyright: `Copyright © ${new Date().getFullYear()} Georg Straßberger`,
             },
             prism: {
                 theme: prismThemes.github,

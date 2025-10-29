@@ -7,17 +7,16 @@ import {Skills} from "../components/Skills";
 import {Navbar} from "../components/Navbar";
 
 
-
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <>
-            <Navbar />
-            <AboutMe />
-            <Skills />
-            <Projects />
-            <Contact />
-            <Footer />
+            <Navbar/>
+            <AboutMe/>
+            <Skills/>
+            <Projects/>
+            <Contact/>
+            <Footer/>
         </>
     );
 }

@@ -39,16 +39,26 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/terminal.png" alt="vServer"/>
                             <article className={styles.description}>
-                                vServer Setup Guide ist eine kompakte Anleitung zur Einrichtung eines virtuellen
-                                Servers mit SSH-Zugang, Nginx-Webserver und GitHub-Integration.
-                                Der Guide führt Schritt für Schritt durch die sichere Serverkonfiguration – von der
-                                Schlüsselverwaltung bis zur Bereitstellung eigener Projekte – und enthält Befehle
-                                für Linux und Windows.
+                                <Translate id="homepage.projects.vserver.description">
+                                    vServer Setup Guide is a hands-on
+                                    tutorial for setting up your own virtual server.
+                                    It walks you through creating a secure SSH connection, configuring an Nginx web
+                                    server, and integrating GitHub for deployments.
+                                    The guide covers common tasks such as user management, permissions, and SSL setup.
+                                    It’s designed for beginners who want to build and manage their own development or
+                                    testing environment – with examples for both Linux and Windows.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/vserver">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/vserver">
+                                    <Translate id="homepage.projects.vserver.link">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://gitlab.com/geeser/vserver"
-                                   target="_blank">GitLab</a>
+                                   target="_blank">
+                                    GitLab
+                                </a>
                             </div>
                         </div>
                         {/* BABY TOOLS */}
@@ -73,17 +83,27 @@ export function Projects() {
                                     <span>Container</span>
                                 </div>
                             </div>
-                            <img className={styles.image} src="/img/baby_toy.png" alt="Wordpress"/>
+                            <img className={styles.image} src="/img/baby_toy.png" alt="BabyToolsShop"/>
                             <article className={styles.description}>
-                                Babyshop ist ein Beispielprojekt, das zeigt, wie eine Django-Webanwendung mithilfe von
-                                Docker containerisiert und bereitgestellt wird.
-                                Das Repository enthält eine vollständige Anleitung zum Erstellen eines Docker-Images,
-                                Starten eines Containers und Verwalten der Anwendung über das Django-Admin-Dashboard.
+                                <Translate id="homepage.projects.babytools.description">
+                                    Baby Tools Shop is a sample project demonstrating how to build, containerize, and
+                                    deploy a Django web application using Docker.
+                                    The repository includes a complete step-by-step guide for creating the Docker image,
+                                    running the containers, and managing the app through the Django admin interface.
+                                    The goal was to create a scalable and reproducible setup that can easily be adapted
+                                    to different systems – ideal for learning purposes and small web projects.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/baby-tools">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/baby-tools">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://gitlab.com/geeser/baby_tool_shop"
-                                   target="_blank">GitLab</a>
+                                   target="_blank">
+                                    GitLab
+                                </a>
                             </div>
                         </div>
                         {/* TRUCK SIGNS API */}
@@ -115,16 +135,26 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/truck_signs_api.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                Truck Signs API ist eine Django-basierte Webanwendung für einen Online-Shop, der
-                                vorgefertigte und personalisierte Vinyl-Aufkleber für Lkw anbietet. Das Projekt
-                                demonstriert den vollständigen Aufbau einer containerisierten Anwendung mit Docker,
-                                bestehend aus einer PostgreSQL-Datenbank und einer Django-API, die über ein
-                                Admin-Dashboard verwaltet wird.
+                                <Translate id="homepage.projects.trucksignsapi.description">
+                                    Truck Signs API is a Django-based web application serving as the backend for an
+                                    online shop offering truck decals — both pre-made and custom designs.
+                                    The project demonstrates how to build a containerized application using Docker,
+                                    consisting of a PostgreSQL database, a Django REST API, and an admin dashboard for
+                                    managing products and orders.
+                                    The goal was to create a modular, maintainable, and reproducible infrastructure that
+                                    can easily run both locally and on a server.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/truck-signs-api">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/truck-signs-api">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://gitlab.com/geeser/truck_signs_api"
-                                   target="_blank">GitLab</a>
+                                   target="_blank">
+                                    GitLab
+                                </a>
                             </div>
                         </div>
                         {/* Minecraft */}
@@ -151,16 +181,28 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/minecraft.png" alt="Minecraft"/>
                             <article className={styles.description}>
-                                Minecraft Server Hosting (Java Edition) bietet eine vollständige, Docker-basierte
-                                Serverlösung für die Minecraft Java Edition, ohne auf vorgefertigte Images
-                                zurückzugreifen. Der Server wird direkt aus der offiziellen server.jar von Mojang über
-                                den SHA1-Hash erstellt und lässt sich vollständig über eine .env-Datei konfigurieren.
+                                <Translate id="homepage.projects.minecraft.description">
+                                    Minecraft Server Hosting (Java Edition) is a fully Docker-based server setup built
+                                    without using pre-made images.
+                                    The server is generated directly from Mojang’s official server.jar using its SHA1
+                                    hash, ensuring full transparency and control.
+                                    All settings — such as version, ports, memory limits, and whitelist — are configured
+                                    centrally via an .env file.
+                                    The project serves as a template for running a Minecraft server in containers that
+                                    is automated, reproducible, and secure.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/minecraft">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/minecraft">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link}
                                    href="https://github.com/GeorgStrassberger/minecraft_server_hosting"
-                                   target="_blank">Github</a>
+                                   target="_blank">
+                                    Github
+                                </a>
                             </div>
                         </div>
                         {/* WORDPRESS */}
@@ -187,16 +229,27 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/wordpress.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                WordPress Docker Example ist ein einfaches Docker-Compose-Beispiel, das zeigt, wie eine
-                                WordPress-Installation zusammen mit einer MariaDB-Datenbank und dem Adminer-Interface
-                                gestartet werden kann. Das Projekt dient als leicht verständliche Vorlage für das
-                                Hosting einer WordPress-Umgebung in Containern mit vollständig konfigurierbaren
-                                Umgebungsvariablen.
+                                <Translate id="homepage.projects.wordpress.description">
+                                    WordPress Docker Example is a simple Docker Compose project that demonstrates how to
+                                    run a complete WordPress environment inside containers.
+                                    The setup includes WordPress, a MariaDB database, and the Adminer interface for
+                                    database management.
+                                    All key parameters such as users, passwords, and ports are configured via
+                                    environment variables.
+                                    The project serves as an easy-to-use template for hosting and testing WordPress
+                                    instances in an isolated container environment.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/wordpress">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/wordpress">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://github.com/GeorgStrassberger/wordpress_example"
-                                   target="_blank">Github</a>
+                                   target="_blank">
+                                    Github
+                                </a>
                             </div>
                         </div>
                         {/* CONDUIT */}
@@ -223,15 +276,27 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/c_docker.png" alt="Conduit"/>
                             <article className={styles.description}>
-                                Conduit ist eine vollständige Fullstack-Webanwendung mit Angular-Frontend und
-                                Django-Backend, die vollständig Dockerisiert bereitgestellt wird. Das Projekt
-                                demonstriert, wie Frontend und Backend über docker compose orchestriert und über
-                                separate Container gemeinsam betrieben werden können.
+                                <Translate id="homepage.projects.conduit.description">
+                                    Conduit is a complete full-stack web application featuring an Angular frontend and a
+                                    Django backend, fully deployed in Docker containers.
+                                    The project demonstrates how multiple services – frontend, backend, and database –
+                                    can be orchestrated using Docker Compose.
+                                    This separation of components provides a clean, modular architecture that is easy to
+                                    extend, test, and deploy across different environments.
+                                    Conduit serves as a practical example of modern web development with a containerized
+                                    infrastructure.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/da-projects/conduit">Documentation</a>
+                                <a className={styles.link} href="/docs/da-projects/conduit">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://github.com/GeorgStrassberger/conduit"
-                                   target="_blank">Github</a>
+                                   target="_blank">
+                                    Github
+                                </a>
                             </div>
                         </div>
                         {/* JUICE SHOP */}
@@ -253,16 +318,27 @@ export function Projects() {
                             </div>
                             <img className={styles.image} src="/img/juice_shop.png" alt="Wordpress"/>
                             <article className={styles.description}>
-                                Write some information about the project.
-                                For example: What are you proud of?
-                                What were you able to implement here?
-                                What different algorithms, server architecture did you use?
-                                Why did you find this project so interesting?
+                                <Translate id="homepage.projects.juiceshop.description">
+                                    OWASP Juice Shop is an intentionally vulnerable web application created for learning
+                                    and testing purposes in the field of web security.
+                                    In this project, I run Juice Shop in an isolated environment to explore security
+                                    mechanisms, vulnerabilities, and attack vectors in a realistic setup.
+                                    Docker containers and shell scripts are used to automate the setup and reset process
+                                    completely.
+                                    The project serves as a hands-on platform to practice penetration testing, security
+                                    analysis, and hardening techniques.
+                                </Translate>
                             </article>
                             <div className={styles.linkGroup}>
-                                <a className={styles.link} href="/docs/juice-shop">Documentation</a>
+                                <a className={styles.link} href="/docs/juice-shop">
+                                    <Translate id="homepage.projects.link.documentation">
+                                        Documentation
+                                    </Translate>
+                                </a>
                                 <a className={styles.link} href="https://github.com/juice-shop/juice-shop"
-                                   target="_blank">Github</a>
+                                   target="_blank">
+                                    Github
+                                </a>
                             </div>
                         </div>
                         {/*ADD MORE */}

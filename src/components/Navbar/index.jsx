@@ -35,16 +35,16 @@ export function Navbar() {
 
                     {/* Desktop-Links (>= 992px) */}
                     <div className={styles.links}>
-                        <a className={styles.link} href="#aboutMe">
+                        <a className={styles.link} href="/#aboutMe">
                             <Translate id="homepage.navbar.aboutMe">About Me</Translate>
                         </a>
-                        <a className={styles.link} href="#mySkills">
+                        <a className={styles.link} href="/#mySkills">
                             <Translate id="homepage.navbar.skills">My skills</Translate>
                         </a>
-                        <a className={styles.link} href="#myProjects">
+                        <a className={styles.link} href="/#myProjects">
                             <Translate id="homepage.navbar.projects">My projects</Translate>
                         </a>
-                        <a className={styles.link} href="#contact">
+                        <a className={styles.link} href="/#contact">
                             <Translate id="homepage.navbar.contact">Contact</Translate>
                         </a>
                         {/* Language Switcher */}
@@ -104,16 +104,16 @@ export function Navbar() {
                 }}
                 onClick={() => setOpen(false)}
             >
-                <a className={styles.menuLink} href="#aboutMe">
+                <a className={styles.menuLink} href="/#aboutMe">
                     <Translate id="homepage.navbar.aboutMe">About Me</Translate>
                 </a>
-                <a className={styles.menuLink} href="#mySkills">
+                <a className={styles.menuLink} href="/#mySkills">
                     <Translate id="homepage.navbar.skills">My skills</Translate>
                 </a>
-                <a className={styles.menuLink} href="#myProjects">
+                <a className={styles.menuLink} href="/#myProjects">
                     <Translate id="homepage.navbar.projects">My projects</Translate>
                 </a>
-                <a className={styles.menuLink} href="#contact">
+                <a className={styles.menuLink} href="/#contact">
                     <Translate id="homepage.navbar.contact">Contact</Translate>
                 </a>
                 {/* Sprachauswahl auch mobil */}

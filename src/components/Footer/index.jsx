@@ -1,13 +1,14 @@
 import styles from './style.module.css';
+import Translate from "@docusaurus/Translate";
 
 export function Footer() {
 
-    function getCurrentYear(){
+    function getCurrentYear() {
         return new Date().getFullYear();
     }
 
     return (
-        <section id="footer" className="bg-black">
+        <footer id="footer" className="bg-black">
             <div className="my_container">
                 <div className={styles.footer}>
                     <a href="#">
@@ -17,17 +18,18 @@ export function Footer() {
                         <li>
                             <span className={styles.text}>&#169;</span>
                             <span className={styles.text}>Georg Straßberger</span>
-                            <span className={styles.text}>{ getCurrentYear() }</span>
+                            <span className={styles.text}>{getCurrentYear()}</span>
                         </li>
                         <li>
                             <a className={styles.link} href="legalnotice">
-                                Legal notice
+                                <Translate id="homepage.footer.legalNotice">
+                                    Legal notice
+                                </Translate>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
-

@@ -15,9 +15,9 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-    patternSidebar: [
-        'pattern/api-naming-conventions',
-    ],
+    // patternSidebar: [
+    //     'pattern/type-naming-conventions',
+    // ],
     projectSidebar: [
         'da-projects/overview',
         'da-projects/vserver',
@@ -39,7 +39,6 @@ const sidebars = {
     juiceShopSidebar: [
         'juice-shop/index',
         'juice-shop/autostart-service',
-        'juice-shop/account_list',
         {
             type: 'category',
             label: '1 Star',
@@ -87,8 +86,11 @@ const sidebars = {
                 'juice-shop/bonus_challenge_2'
             ],
         },
+        'juice-shop/account_list',
+        'juice-shop/hashalgorithmus'
     ],
     toolSidebar: [
+        'tools/overview',
         'tools/powershell',
         'tools/docker',
         {

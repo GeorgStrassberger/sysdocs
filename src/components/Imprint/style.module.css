@@ -1,0 +1,15 @@
+.imprint {
+    color: var(--white);
+    padding-block: 3rem;
+
+
+}
+
+.imprintLink {
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .imprint {
+    }
+}

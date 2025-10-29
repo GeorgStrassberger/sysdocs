@@ -24,7 +24,7 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.html.title">
-                                            How I use this Skill
+                                            How I use it
                                         </Translate>
                                     </h3>
                                     <ul>
@@ -59,7 +59,7 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.css.title">
-                                            Where I apply it
+                                            How I style it
                                         </Translate>
                                     </h3>
                                     <ul>
@@ -94,7 +94,7 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.docusaurus.title">
-                                            Practical use
+                                            How I build with it
                                         </Translate>
                                     </h3>
                                     <ul>
@@ -129,14 +129,30 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.python.title">
-                                            Practical use
+                                            What I build with Python
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>Build APIs</li>
-                                        <li>spam filtering, recommendation systems</li>
-                                        <li>automate software testing</li>
-                                        <li>using libraries like Tkinter, PyQt or Kivy</li>
+                                        <li>
+                                            <Translate id="homepage.skills.python.list.1">
+                                                IoT Microcontroller
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.python.list.1">
+                                                Prototyping CLI tools and security utilities
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.python.list.1">
+                                                APIs with Flask/Django
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.python.list.1">
+                                                Lightweight automation scripts and system tooling
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -153,13 +169,25 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.shell.title">
-                                            How i used this skill
+                                            How I automate with shell
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>Adding new users and setting their permissions</li>
-                                        <li>Performing calculations or running</li>
-                                        <li>Conditional statements, loops and functions</li>
+                                        <li>
+                                            <Translate id="homepage.skills.shell.list.1">
+                                                Writing entrypoint.sh to start and configure docker
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.shell.list.2">
+                                                Adjusting config files (e.g. permissions, variables, services)
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.shell.list.3">
+                                                Automating deployment and runtime setup on Linux systems
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -176,14 +204,16 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.yaml.title">
-                                            How i used this skill
+                                            Wie ich YAML einsetze
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>A Kubernetes deployment</li>
-                                        <li>store settings like database connections</li>
-                                        <li>environment-specific variables</li>
-                                        <li>complex data structures represent lists and maps</li>
+                                        <li>Kubernetes deployments and services in YAML</li>
+                                        <li>Storing configuration values such as database connections and credentials
+                                        </li>
+                                        <li>Managing environment-specific variables for different stages (dev, test,
+                                            prod)
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -200,13 +230,25 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.container.title">
-                                            How i used this skill
+                                            How I work with containers
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>CI/CD piplines</li>
-                                        <li>automate building, testing & deploying applications</li>
-                                        <li>build microservices-based applications</li>
+                                        <li>
+                                            <Translate id="homepage.skills.container.list.1">
+                                                Building and running services in containers (Docker)
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.container.list.2">
+                                                Managing lightweight clusters and workloads with k3s
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.container.list.3">
+                                                Using containers in deployment and automation workflows
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -223,14 +265,25 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.cicd.title">
-                                            How i used this skill
+                                            How I implement CI/CD
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>Automated builds and tests</li>
-                                        <li>pre-build actions for common tasks</li>
-                                        <li>push, pull request or schedule</li>
-                                        <li>Automated deployments</li>
+                                        <li>
+                                            <Translate id="homepage.skills.cicd.list.1">
+                                                Automating builds, tests, and deployments through CI/CD pipelines
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.cicd.list.2">
+                                                Running pre-build and validation steps for consistent results
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.cicd.list.3">
+                                                Triggering workflows on push, pull requests, or scheduled events
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -247,13 +300,25 @@ export function Skills() {
                                 <div className={styles.skillBack}>
                                     <h3>
                                         <Translate id="homepage.skills.security.title">
-                                            In practice
+                                            How I apply security
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>simulate attacks and identify vulnerabilities</li>
-                                        <li>Setting up multi-factor authentication</li>
-                                        <li>login security</li>
+                                        <li>
+                                            <Translate id="homepage.skills.security.list.1">
+                                                Simulating attacks to identify and understand vulnerabilities
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.security.list.2">
+                                                Hardening login and access control mechanisms
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.security.list.3">
+                                                Using security tools to analyze configurations and permissions
+                                            </Translate>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

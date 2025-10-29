@@ -7,22 +7,46 @@ export function Contact() {
             <div className="my_container">
                 <div className={styles.contact}>
                     <h2 className="title">
-                        <Translate id="homepage.contact.title">
-                        Contect me
+                        <Translate id="homepage.contactMe.title">
+                            Contect me
                         </Translate>
                     </h2>
                     <article className={styles.article}>
                         <div className={styles.info}>
-                            <p className={styles.infoTitle}>Include the Information like:</p>
+                            <p className={styles.infoTitle}>
+                                <Translate id="homepage.contactMe.info.title">
+                                    When reaching out, please include information such as:
+                                </Translate>
+                            </p>
                             <ul className={styles.infolist}>
-                                <li>Feel free to reach out with job offers or apportunities like.</li>
-                                <li>What robe are you looking for?</li>
-                                <li>How you will contribute to the new team.</li>
-                                <li>Are you open for remote work or even relocate?</li>
+                                <li>
+                                    <Translate id="homepage.contactMe.info.list.1">
+                                        Feel free to reach out with job offers or apportunities like.
+                                    </Translate>
+                                </li>
+                                <li>
+                                    <Translate id="homepage.contactMe.info.list.2">
+                                        What robe are you looking for?
+                                    </Translate>
+                                </li>
+                                <li>
+                                    <Translate id="homepage.contactMe.info.list.3">
+                                        How you will contribute to the new team.
+                                    </Translate>
+                                </li>
+                                <li>
+                                    <Translate id="homepage.contactMe.info.list.4">
+                                        Are you open for remote work or even relocate?
+                                    </Translate>
+                                </li>
                             </ul>
                         </div>
                         <div className={styles.social}>
-                            <p className={styles.socialTitle}>Looking forward to hearing from you!</p>
+                            <p className={styles.socialTitle}>
+                                <Translate id="homepage.contactMe.social.title">
+                                    I’m looking forward to hearing from you!
+                                </Translate>
+                            </p>
                             <ul className={styles.socialList}>
                                 <li>
                                     <a className={styles.link} href="mailto:georg.strassberger@googlemail.com">
@@ -37,7 +61,7 @@ export function Contact() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a className={styles.link} href="#">
+                                    <a className={styles.link} href="https://www.linkedin.com/in/georg-s-85b563196/" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                              fill="currentColor" viewBox="0 0 16 16">
                                             <path

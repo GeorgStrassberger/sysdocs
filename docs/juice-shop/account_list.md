@@ -1,10 +1,10 @@
-# Juice Shop Users
+# Juice Shop Accounts
 
-List of currently existing `Juice Shop` users that I have found so far.
+My list of currently existing `Juice Shop` users that I have found so far.
 
 --- 
 
-Von den Prudukt kommentaren
+From the product comments
 - bender@juice-sh.op
 - jim@juice-sh.op
 - admin@juice-sh.op 
@@ -15,14 +15,6 @@ Von den Prudukt kommentaren
 - accountant@juice-sh.op
 - morty@juice-sh.
 
-Von dem Admin Account http://192.168.178.33:3000/#/administration
+From the admin account http://192.168.178.33:3000/#/administration
 - J12934@juice-sh.op
 - wurstbrot@juice-sh.op
-
-Selbst versuch
-````text
-  - Email:  john@juice-sh.op    PW: 123456 <- neu vergeben.
-````
-
-Apple Pomace
-Finest pressings of apples. Allergy disclaimer: Might contain traces of worms. Can be sent back to us for recycling.
