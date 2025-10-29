@@ -139,17 +139,17 @@ export function Skills() {
                                             </Translate>
                                         </li>
                                         <li>
-                                            <Translate id="homepage.skills.python.list.1">
+                                            <Translate id="homepage.skills.python.list.2">
                                                 Prototyping CLI tools and security utilities
                                             </Translate>
                                         </li>
                                         <li>
-                                            <Translate id="homepage.skills.python.list.1">
+                                            <Translate id="homepage.skills.python.list.3">
                                                 APIs with Flask/Django
                                             </Translate>
                                         </li>
                                         <li>
-                                            <Translate id="homepage.skills.python.list.1">
+                                            <Translate id="homepage.skills.python.list.4">
                                                 Lightweight automation scripts and system tooling
                                             </Translate>
                                         </li>
