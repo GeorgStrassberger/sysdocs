@@ -201,7 +201,7 @@ export function Projects() {
                                 <a className={styles.link}
                                    href="https://github.com/GeorgStrassberger/minecraft_server_hosting"
                                    target="_blank">
-                                    Github
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -248,7 +248,7 @@ export function Projects() {
                                 </a>
                                 <a className={styles.link} href="https://github.com/GeorgStrassberger/wordpress_example"
                                    target="_blank">
-                                    Github
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -295,7 +295,7 @@ export function Projects() {
                                 </a>
                                 <a className={styles.link} href="https://github.com/GeorgStrassberger/conduit"
                                    target="_blank">
-                                    Github
+                                    GitHub
                                 </a>
                             </div>
                         </div>
@@ -337,7 +337,7 @@ export function Projects() {
                                 </a>
                                 <a className={styles.link} href="https://github.com/juice-shop/juice-shop"
                                    target="_blank">
-                                    Github
+                                    GitHub
                                 </a>
                             </div>
                         </div>

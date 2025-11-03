@@ -100,7 +100,10 @@ const sidebars = {
                 'tools/kubernetes/index',
                 'tools/kubernetes/home-setup',
                 'tools/kubernetes/deployment',
-                'tools/kubernetes/service'
+                'tools/kubernetes/service',
+                'tools/kubernetes/ingress',
+                'tools/kubernetes/environment',
+                'tools/kubernetes/secret',
             ],
         },
     ],

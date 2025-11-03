@@ -1,0 +1,155 @@
+# Ingress
+
+Ingress ist eine 7-Layer (HTTP/HTTPS) Routing-Schicht vor deinen Services:
+routet per Hostnamen (z. B. demo.local) oder Pfad (z. B. /app) zu deinen internen Services,
+
+---
+
+Schritt 2: Ingress-Ressource anlegen
+
+Host-basiertes Routing (empfohlen). Traefik nutzt in K3s meist die IngressClass traefik – wir geben sie explizit an:
+
+```bash
+vi httpd-ingress.yaml
+```
+
+```yaml
+apiVersion: networking.k8s.io/v1        # API version for Ingress resources
+kind: Ingress                           # Defines this resource as an Ingress
+metadata:
+  name: httpd-ing                       # Name of the Ingress resource
+  namespace: default                    # Namespace where the Ingress lives
+spec:
+  ingressClassName: traefik             # Use the Traefik Ingress Controller (default in K3s)
+  rules:                                # Define routing rules for incoming requests
+  - host: httpd.local                   # Hostname (mapped in /etc/hosts to your node IP)
+    http:
+      paths:                            # List of HTTP path routing rules
+      - path: /                         # Route for the root path "/"
+        pathType: Prefix                # Match all paths starting with "/"
+        backend:                        # Define the target service (backend)
+          service:
+            name: httpd-svc             # Name of the Service inside the cluster
+            port:
+              number: 80                # Target port exposed by the Service
+```
+
+```bash
+kubectl apply -f httpd-ingress.yaml
+kubectl get ingress
+```
+
+
+### DNS
+
+Damit dein Browser http://httpd.local an die K3s-IP sendet, musst du auf Windows einen statischen Eintrag setzen. Um den Hostname als DNS auflösen zu können.
+
+Windows hosts-Datei anpassen, öffne als Administrator:
+```text
+C:\Windows\System32\drivers\etc\hosts
+```
+
+Füge unten hinzu:
+# K3s-IP dein-Hostname für deine Services
+192.168.178.52   httpd.local
+
+---
+
+## TLS Zertifikate
+
+### Erstelle ein selbstsigniertes Zertifikat
+
+Auf deinem Fujitsu (K3s-Server):
+```bash
+openssl req -x509 -nodes -days 365 \
+  -newkey rsa:2048 \
+  -keyout tls.key \
+  -out tls.crt \
+  -subj "/CN=httpd.local/O=LocalCluster"
+```
+
+### Kubernetes-Secret anlegen
+```
+kubectl create secret tls httpd-tls \
+  --cert=tls.crt \
+  --key=tls.key
+```
+
+### Ingress um TLS erweitern
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: httpd-ing
+  namespace: default
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts:
+        - httpd.local             # 👈 muss mit CN im Zertifikat übereinstimmen
+      secretName: httpd-tls       # 👈 verweist auf dein TLS-Secret
+  rules:
+    - host: httpd.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: httpd-svc
+                port:
+                  number: 80
+```
+
+
+## TLS Secret erstellen:
+
+Auf deinem Fujitsu (K3s-Server):
+```bash
+openssl req -x509 -nodes -days 365 \
+  -newkey rsa:2048 \
+  -keyout tls.key \
+  -out tls.crt \
+  -subj "/CN=httpd.local/O=LocalCluster"
+```
+
+Zertifikat in Base64 codieren:
+```bash
+base64 -w0 tls.key > https-key.b64
+base64 -w0 tls.crt > https-crt.b64
+```
+
+Datei anlegen
+```bash
+vim httpd-tls.yaml
+```
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: page-tls                                            # Secret-Name, muss zu deinem Ingress passen
+  namespace: default
+type: kubernetes.io/tls                                     # Typ für TLS-Zertifikate
+data:
+  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1...       # <- Inhalt von crt.b64 hier einfügen
+  tls.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQo...   # <- Inhalt von key.b64 hier einfügen
+```
+
+Anwenden:
+```bash
+kubectl apply -f httpd-secret.yaml
+```
+
+
+---
+
+### Zertifikat auf Windows vertrauen
+
+Kopiert das Zertifikat auf dein Windows-Computer:
+```bash
+scp gest@fujitsu:~/k3s/httpd/tls/tls.crt .\Downloads\httpd.crt
+```
+Doppelklick zumn installieren
+
+

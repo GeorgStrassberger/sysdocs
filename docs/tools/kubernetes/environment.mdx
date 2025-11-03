@@ -1,0 +1,62 @@
+# Environment Variables
+
+Environment variables can be defined directly within a Kubernetes **Deployment** specification:
+
+---
+
+Extended `httpd-deployment.yaml`:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment       
+  labels:                      
+    app: httpd
+spec:
+  replicas: 3                 
+  selector:
+    matchLabels:
+      app: httpd              
+  template:
+    metadata:
+      labels:
+        app: httpd            
+    spec:
+      containers:
+      - name: httpd
+        image: httpd:2.4-trixie
+        ports:
+        - containerPort: 80
+        env:                            # ⚡️ NEW: Environment variables section ⚡️
+        - name: GEST                    # 🔑 KEY
+          value: "Georg Strassberger"   # 💬 VALUE
+```
+
+## Logging into a container
+
+To connect to a running container within the cluster, use the following command:
+```bash
+kubectl exec -it <pod-name> -- /bin/bash
+```
+
+Before doing that, list all currently running pods to find the correct pod name:
+```bash
+kubectl get pods -o wide
+```
+Example output:
+```bash
+NAME                                READY   STATUS    RESTARTS   AGE     IP           NODE      NOMINATED NODE   READINESS GATES
+httpd-deployment-57d699fd7b-2kmcv   1/1     Running   0          2m10s   10.42.1.23   raspi     <none>           <none>
+httpd-deployment-57d699fd7b-555kt   1/1     Running   0          2m17s   10.42.1.22   raspi     <none>           <none>
+httpd-deployment-57d699fd7b-mv5td   1/1     Running   0          2m14s   10.42.0.42   fujitsu   <none>           <none>
+nginx-deployment-664fcb7fb8-n5ssw   1/1     Running   0          5d19h   10.42.0.16   fujitsu   <none>           <none>
+nginx-deployment-664fcb7fb8-ww42v   1/1     Running   0          5d19h   10.42.1.10   raspi     <none>           <none>
+```
+
+The variable is present in all containers. Once inside the container, you can verify that your environment variable was set correctly by running:
+```bash
+root@httpd-deployment-57d699fd7b-2kmcv:/usr/local/apache2# echo $GEST #env -name:GEST
+Georg Strassberger
+```
+
+---

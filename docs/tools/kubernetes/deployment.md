@@ -35,6 +35,13 @@ kubectl edit deployment nginx-deployment
 deployment.apps/nginx-deployment edited
 ```
 
+### Scale a deployment
+
+```bash
+kubectl scale deployment nginx-deployment --replicas=9
+```
+
+
 ### Delete a deployment
 
 Deletes the specified resource and all objects created with it.
@@ -65,7 +72,7 @@ metadata:                     # Object metadata (name, labels, etc.)
   labels:                      
     app: httpd
 spec:                         # Desired state of the resource
-  replicas: 3                 
+  replicas: 3                 # Count of pods to run
   selector:
     matchLabels:
       app: httpd              
