@@ -208,11 +208,22 @@ export function Skills() {
                                         </Translate>
                                     </h3>
                                     <ul>
-                                        <li>Kubernetes deployments and services in YAML</li>
-                                        <li>Storing configuration values such as database connections and credentials
+                                        <li>
+                                            <Translate id="homepage.skills.yaml.list.1">
+                                                Kubernetes deployments and services in YAML
+                                            </Translate>
                                         </li>
-                                        <li>Managing environment-specific variables for different stages (dev, test,
-                                            prod)
+                                        <li>
+                                            <Translate id="homepage.skills.yaml.list.2">
+                                                Storing configuration values such as database connections and
+                                                credentials
+                                            </Translate>
+                                        </li>
+                                        <li>
+                                            <Translate id="homepage.skills.yaml.list.3">
+                                                Managing environment-specific variables for different stages (dev, test,
+                                                prod)
+                                            </Translate>
                                         </li>
                                     </ul>
                                 </div>
