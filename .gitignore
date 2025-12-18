@@ -3,6 +3,7 @@
 
 # Production
 /build
+/dist
 
 # Generated files
 .docusaurus
@@ -20,8 +21,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # IDE
-.idea
-.vscode
+/.idea
+/.vscode
 
 # Logs
 *.log
