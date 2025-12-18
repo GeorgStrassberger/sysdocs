@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -64,7 +64,7 @@ const config = {
     ],
 
     themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace it with your project's social card
             image: 'img/docusaurus-social-card.jpg',
@@ -87,12 +87,18 @@ const config = {
                         position: 'left',
                         label: 'Juice Shop',
                     },
-                    // {
-                    //     type: 'docSidebar',
-                    //     sidebarId: 'patternSidebar',
-                    //     position: 'left',
-                    //     label: 'Pattern',
-                    // },
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'patternSidebar',
+                        position: 'left',
+                        label: 'Pattern',
+                    },
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'linuxSidebar',
+                        position: 'left',
+                        label: 'Linux',
+                    },
                     {
                         type: 'docSidebar',
                         sidebarId: 'toolSidebar',

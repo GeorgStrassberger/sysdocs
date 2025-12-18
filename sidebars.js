@@ -104,8 +104,18 @@ const sidebars = {
                 'tools/kubernetes/ingress',
                 'tools/kubernetes/environment',
                 'tools/kubernetes/secret',
+                'tools/kubernetes/helm',
+                'tools/kubernetes/k9s',
+                'tools/kubernetes/kubeconfig'
             ],
         },
+    ],
+    linuxSidebar: [
+        'linux/arch_install',
+        'linux/verzeichnisse'
+    ],
+    patternSidebar: [
+        'pattern/type-naming-conventions',
     ],
 };
 

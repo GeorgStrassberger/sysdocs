@@ -48,7 +48,7 @@ Powershell
 - `-t` **t**ype of Key you can also choose another one
 - `-C` **C**omment to identify your key
 - `-f` specifies the **f**ile path and name for storing the key file
-
+- `-N` steht für new passphrase `"" = leer` → der private Schlüssel ist nicht passwortgeschützt
 You do not need to enter a passphrase and can skip entering it by pressing Enter. It is recommended to increase security.
 
 ```bash
