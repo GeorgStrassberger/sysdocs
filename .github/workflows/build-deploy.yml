@@ -1,5 +1,8 @@
 name: Build & Deploy Docusaurus to Hetzner
 
+permissions:
+  contents: read
+
 on:
   push:
     tags:
