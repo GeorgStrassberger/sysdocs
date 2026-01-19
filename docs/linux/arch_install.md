@@ -138,9 +138,9 @@ Anschließen einstell wofür die Partition sein soll. `[Type]` = `Linux swap`.
 cfdisk /dev/sda/
 ```
 
-| Select label type | 
+| Select label type |
 |:------------------|
-| **gpt** <- Wählen | 
+| **gpt**           |
 | dos               |
 | sgi               |
 | sun               |
@@ -264,7 +264,7 @@ echo KEYMAP=de_latin1 > /etc/vconsole.conf
 
 Hosename festlegen
 ```bash
-echo GEST_ARCH_PC > /etc/hostname
+echo GEST_ARCH > /etc/hostname
 ```
 
 Datei öffnen und bearbeiten.
@@ -281,24 +281,66 @@ vim /etc/hosts
 127.0.1.1   gest-arch.localdomain GEST_ARCH_PC
 ```
 
-<!-- Hier gehts weiter -->
-<!-- https://www.youtube.com/watch?v=b0v8yXIE2GU -->
-<!-- 29:50 -->
 Netzwerk installieren
 ```bash
-
+pacman -S networkmanager
 ```
-
-
-
 
 ```bash
-
+systemctl enable NetworkManager # Erstellt die symlinks
 ```
+
+Passwort des ROOT benutzers ändern
+```bash
+passwd
+```
+
+Bootmanager installieren
+```bash
+pacman -S grub efibootmgr
+```
+
+Auflisten der Festplatten Patetionen, um sicher zu stellen wo wir `/efi` finden um es dort hinein zu installieren
+```bash
+lsblk
+# NAME          TYPE    MOUNTPOINTS
+# sda       8:0         disk
+#  |-sda1   8:1 part    [swap]
+#  |-sda2   8:2 part    /efi
+#  `-sda3   8:3 part    /
+```
+
+GRUB Installieren
+```bash
+grub-install --target=x86_64-efi --bootloader=GRUB --efi-directory=/efi --removable
+# Installation finished. No error reported. <- Wenn alles geklappt hat
+```
+
+GRUB Konfig erstellen
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Um wieder in der Arch ISO zurück zu kommen
+```bash
+exit
+```
+
+#### 7.
+
+Wir sehen wieder am anfrang `root@archiso ~ #` und werfen die ISO aus.
+```bash
+umount -R /mnt
+```
+System Neustarten
+```bash
+reboot
+```
+
 
 ---
 
-#### 7.
+#### 8.
 
 ```bash
 
