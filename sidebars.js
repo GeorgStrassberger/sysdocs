@@ -15,9 +15,6 @@
  @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-    // patternSidebar: [
-    //     'pattern/type-naming-conventions',
-    // ],
     projectSidebar: [
         'da-projects/overview',
         'da-projects/vserver',
@@ -92,6 +89,17 @@ const sidebars = {
     toolSidebar: [
         'tools/overview',
         'tools/powershell',
+        'tools/wireguard',
+        {
+            type: 'category',
+            label: 'Step CA',
+            items: [
+                'tools/step-ca/overview',
+                'tools/step-ca/step-ca',
+                'tools/step-ca/certs',
+                'tools/step-ca/reverse-proxy',
+            ]
+        },
         {
             type: 'category',
             label: 'Docker',
