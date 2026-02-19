@@ -62,5 +62,6 @@ jobs:
             echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u georgstrassberger --password-stdin
             cd /home/gest/docker/sysdocs
             docker compose pull
-            docker compose up -d
+            docker compose up -d --force-recreate --remove-orphans
+            docker image prune -f
           EOF
