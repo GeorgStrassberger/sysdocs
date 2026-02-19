@@ -92,7 +92,20 @@ const sidebars = {
     toolSidebar: [
         'tools/overview',
         'tools/powershell',
-        'tools/docker',
+        {
+            type: 'category',
+            label: 'Docker',
+            items: [
+                'tools/docker/overview',
+                'tools/docker/build',
+                'tools/docker/image',
+                'tools/docker/container',
+                'tools/docker/compose',
+                'tools/docker/volume',
+                'tools/docker/network',
+                'tools/docker/copy'
+            ],
+        },
         {
             type: 'category',
             label: 'Kubernetes',

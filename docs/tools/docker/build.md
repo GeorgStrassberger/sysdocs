@@ -1,10 +1,18 @@
-# Docker
+# Build
+
+Der Docker Build erstellt ein Docker Image anhand eines Dockerfile.
+Das Image ist die Vorlage, aus der später Container gestartet werden.
 
 ---
 
-## Build
+## 1. Dockerfile erstellen
 
-````bash
+Ein Dockerfile definiert Schritt für Schritt, wie dein Image gebaut wird.
+
+Zusätzlich solltest du immer eine `.dockerignore` anlegen, damit unnötige Dateien (z. B. .env, node_modules) nicht ins Image gelangen.
+
+Beispiel Dockerfiel (Node App)
+```bash
 # 🔸 Build-Argument vor dem FROM: Basis-Image konfigurierbar
 ARG NODE_VERSION=20
 FROM node:${NODE_VERSION}
@@ -38,14 +46,23 @@ RUN echo "Ausgabe: NODE_VERSION=$NODE_VERSION, NODE_ENV=$NODE_ENV, PORT=$PORT, W
 
 # 🔸 Startkommando
 CMD ["node", "start"]
-````
+```
 
-Nur Default werten starten
-````bash
+:::
+💡 Vorteil dieser Reihenfolge:
+Layer-Caching → `npm install` wird nur neu gebaut, wenn sich `package.json` ändert.
+:::
+
+---
+
+## 2. Image bauen (Standard)
+
+Image mit Default-Werten erstellen:
+```bash
 docker build -t myapp .
-````
+```
 
-````bash
+```bash
  PS C:\DEVELOPMENT\Dockertest> docker build -t myapp .
 [+] Building 4.4s (11/11) FINISHED                                                                 docker:desktop-linux
  => [internal] load build definition from Dockerfile                                                               0.0s
@@ -72,23 +89,35 @@ docker build -t myapp .
  => => exporting manifest list sha256:6f7441fa3e624fded91a24d50de2ea344a1e4434439e3d1511241d8837a2cc8e             0.0s
  => => naming to docker.io/library/myapp:latest                                                                    0.0s
  => => unpacking to docker.io/library/myapp:latest   
-````
+```
 
-````bash
+Ergebnis:
+- Docker liest das Dockerfile
+- erstellt Layer
+- speichert ein Image lokal
+
+Danach Container starten:
+```bash
 docker run -p 3000:3000 myapp
-````
+```
 
-Mit anderen Werten starten
-````bash
+---
+
+## 3. Build Arguments (Custom Build)
+
+Du kannst dein Image konfigurierbar machen über --build-arg.
+
+Beispiel:
+```bash
 docker build `
   --build-arg NODE_VERSION=18 `
   --build-arg APP_ENV=development `
   --build-arg APP_PORT=4000 `
   --build-arg APP_DIR=/app `
-  -t myapp-dev .
-````
+  -t myapp-custom .
+```
 
-````bash
+```bash
 PS C:\DEVELOPMENT\Dockertest> docker build `
 >>   --build-arg NODE_VERSION=18 `
 >>   --build-arg APP_ENV=development `
@@ -119,36 +148,31 @@ PS C:\DEVELOPMENT\Dockertest> docker build `
  => => exporting config sha256:927df1229e3c0f024e866c1d93eabbb3ec20036dc571bb1722f3984c7476cb11                    0.0s
  => => exporting attestation manifest sha256:6df6d3f18603e93b190f6f59daf4ababd28eb0ca09cb1be0250ee286dab81cb9      0.0s
  => => exporting manifest list sha256:2dd3e4c53f4a954e582d372eb6eeee42f567faac02e0a62b9778bfd73fb1b19f             0.0s
- => => naming to docker.io/library/myapp-dev:latest                                                                0.0s
- => => unpacking to docker.io/library/myapp-dev:latest                                                             0.2s
-````
+ => => naming to docker.io/library/myapp-custom:latest                                                                0.0s
+ => => unpacking to docker.io/library/myapp-custom:latest                                                             0.2s
+```
 
-````bash
-docker run -p 3000:4000 myapp-dev
-````
+Dann Container starten:
+```bash
+docker run -p 3000:4000 myapp-custom
+```
 
-## Image
+---
 
-````
-docker pull imagename
-````
+## 4. .dockerignore
 
+In der `.dockerignore` alle Datein auflisten die später beim __build__ des __images__ nicht mit kopiert werden sollen.
+*(Gleiches prinzip wie bei einer `.gitignore`)*
 
-## Container
-
-````
-docker start imagename -options
-    --name=Containername
-    --restart=option
-    -p portbinding
-    -v volume
-    -d detached
-````
-
-
+Beispiel:
+```yaml
+node_modules
+.env
+.git
+dist
+Dockerfile
+docker-compose.yml
+```
 
 
-
-
-
-
+---
