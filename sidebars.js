@@ -88,7 +88,7 @@ const sidebars = {
     ],
     toolSidebar: [
         'tools/overview',
-        'tools/powershell',
+        // 'tools/powershell',
         'tools/wireguard',
         {
             type: 'category',
@@ -130,14 +130,7 @@ const sidebars = {
                 'tools/kubernetes/kubeconfig'
             ],
         },
-    ],
-    linuxSidebar: [
-        'linux/arch_install',
-        'linux/verzeichnisse'
-    ],
-    patternSidebar: [
-        'pattern/type-naming-conventions',
-    ],
+    ]
 };
 
 export default sidebars;

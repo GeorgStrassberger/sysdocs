@@ -89,28 +89,14 @@ const config = {
                     },
                     {
                         type: 'docSidebar',
-                        sidebarId: 'patternSidebar',
-                        position: 'left',
-                        label: 'Pattern',
-                    },
-                    {
-                        type: 'docSidebar',
-                        sidebarId: 'linuxSidebar',
-                        position: 'left',
-                        label: 'Linux',
-                    },
-                    {
-                        type: 'docSidebar',
                         sidebarId: 'toolSidebar',
                         position: 'left',
                         label: 'Tools',
                     },
-                    // {
-                    //     type: 'localeDropdown',
-                    //     position: 'right',
-                    // }
-                    // ,
-                    // {to: '/blog', label: 'Blog', position: 'left'},
+                    {
+                        type: 'localeDropdown',
+                        position: 'right',
+                    },
                     {
                         href: 'https://github.com/GeorgStrassberger',
                         label: 'GitHub',
@@ -154,13 +140,13 @@ const config = {
                     {
                         title: 'More',
                         items: [
-                            // {
-                            //   label: 'Blog',
-                            //   to: '/blog',
-                            // },
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/GeorgStrassberger',
+                            },
+                            {
+                                label: 'Gitlab',
+                                href: 'https://gitlab.com/geeser',
                             },
                         ],
                     },

@@ -26,5 +26,13 @@
   "sidebar.toolSidebar.category.Kubernetes": {
     "message": "Kubernetes",
     "description": "The label for category 'Kubernetes' in sidebar 'toolSidebar'"
+  },
+  "sidebar.toolSidebar.category.Step CA": {
+    "message": "Step CA",
+    "description": "The label for category 'Step CA' in sidebar 'toolSidebar'"
+  },
+  "sidebar.toolSidebar.category.Docker": {
+    "message": "Docker",
+    "description": "The label for category 'Docker' in sidebar 'toolSidebar'"
   }
 }

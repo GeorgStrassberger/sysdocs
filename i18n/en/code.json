@@ -358,5 +358,173 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.footer.legalNotice": {
+    "message": "Legal notice"
+  },
+  "homepage.contactMe.title": {
+    "message": "Contect me"
+  },
+  "homepage.contactMe.info.title": {
+    "message": "When reaching out, please include information such as:"
+  },
+  "homepage.contactMe.info.list.1": {
+    "message": "Feel free to reach out with job offers or apportunities like."
+  },
+  "homepage.contactMe.info.list.2": {
+    "message": "What robe are you looking for?"
+  },
+  "homepage.contactMe.info.list.3": {
+    "message": "How you will contribute to the new team."
+  },
+  "homepage.contactMe.info.list.4": {
+    "message": "Are you open for remote work or even relocate?"
+  },
+  "homepage.contactMe.social.title": {
+    "message": "I’m looking forward to hearing from you!"
+  },
+  "homepage.projects.title": {
+    "message": "My projects"
+  },
+  "homepage.projects.vserver.description": {
+    "message": "vServer Setup Guide is a hands-on tutorial for setting up your own virtual server. It walks you through creating a secure SSH connection, configuring an Nginx web server, and integrating GitHub for deployments. The guide covers common tasks such as user management, permissions, and SSL setup. It’s designed for beginners who want to build and manage their own development or testing environment – with examples for both Linux and Windows."
+  },
+  "homepage.projects.vserver.link": {
+    "message": "Documentation"
+  },
+  "homepage.projects.babytools.description": {
+    "message": "Baby Tools Shop is a sample project demonstrating how to build, containerize, and deploy a Django web application using Docker. The repository includes a complete step-by-step guide for creating the Docker image, running the containers, and managing the app through the Django admin interface. The goal was to create a scalable and reproducible setup that can easily be adapted to different systems – ideal for learning purposes and small web projects."
+  },
+  "homepage.projects.link.documentation": {
+    "message": "Documentation"
+  },
+  "homepage.projects.trucksignsapi.description": {
+    "message": "Truck Signs API is a Django-based web application serving as the backend for an online shop offering truck decals — both pre-made and custom designs. The project demonstrates how to build a containerized application using Docker, consisting of a PostgreSQL database, a Django REST API, and an admin dashboard for managing products and orders. The goal was to create a modular, maintainable, and reproducible infrastructure that can easily run both locally and on a server."
+  },
+  "homepage.projects.minecraft.description": {
+    "message": "Minecraft Server Hosting (Java Edition) is a fully Docker-based server setup built without using pre-made images. The server is generated directly from Mojang’s official server.jar using its SHA1 hash, ensuring full transparency and control. All settings — such as version, ports, memory limits, and whitelist — are configured centrally via an .env file. The project serves as a template for running a Minecraft server in containers that is automated, reproducible, and secure."
+  },
+  "homepage.projects.wordpress.description": {
+    "message": "WordPress Docker Example is a simple Docker Compose project that demonstrates how to run a complete WordPress environment inside containers. The setup includes WordPress, a MariaDB database, and the Adminer interface for database management. All key parameters such as users, passwords, and ports are configured via environment variables. The project serves as an easy-to-use template for hosting and testing WordPress instances in an isolated container environment."
+  },
+  "homepage.projects.conduit.description": {
+    "message": "Conduit is a complete full-stack web application featuring an Angular frontend and a Django backend, fully deployed in Docker containers. The project demonstrates how multiple services – frontend, backend, and database – can be orchestrated using Docker Compose. This separation of components provides a clean, modular architecture that is easy to extend, test, and deploy across different environments. Conduit serves as a practical example of modern web development with a containerized infrastructure."
+  },
+  "homepage.projects.juiceshop.description": {
+    "message": "OWASP Juice Shop is an intentionally vulnerable web application created for learning and testing purposes in the field of web security. In this project, I run Juice Shop in an isolated environment to explore security mechanisms, vulnerabilities, and attack vectors in a realistic setup. Docker containers and shell scripts are used to automate the setup and reset process completely. The project serves as a hands-on platform to practice penetration testing, security analysis, and hardening techniques."
+  },
+  "homepage.skills.title": {
+    "message": "My skills"
+  },
+  "homepage.skills.html.title": {
+    "message": "How I use it"
+  },
+  "homepage.skills.html.list.1": {
+    "message": "Structured layouts with semantic HTML"
+  },
+  "homepage.skills.html.list.2": {
+    "message": "Fast-loading, accessible pages"
+  },
+  "homepage.skills.html.list.3": {
+    "message": "Forms, menus, and interactive sections that just work"
+  },
+  "homepage.skills.css.title": {
+    "message": "How I style it"
+  },
+  "homepage.skills.css.list.1": {
+    "message": "Modern layouts with Flexbox and Grid"
+  },
+  "homepage.skills.css.list.2": {
+    "message": "Simple, consistent styles that just work"
+  },
+  "homepage.skills.css.list.3": {
+    "message": "Smooth animations and transitions"
+  },
+  "homepage.skills.docusaurus.title": {
+    "message": "How I build with it"
+  },
+  "homepage.skills.docusaurus.list.1": {
+    "message": "Custom static sites with React"
+  },
+  "homepage.skills.docusaurus.list.2": {
+    "message": "Search, tags, and i18n configuration"
+  },
+  "homepage.skills.docusaurus.list.3": {
+    "message": "Flexible layouts and content structure"
+  },
+  "homepage.skills.python.title": {
+    "message": "What I build with Python"
+  },
+  "homepage.skills.python.list.1": {
+    "message": "IoT Microcontroller"
+  },
+  "homepage.skills.python.list.2": {
+    "message": "Prototyping CLI tools and security utilities"
+  },
+  "homepage.skills.python.list.3": {
+    "message": "APIs with Flask/Django"
+  },
+  "homepage.skills.python.list.4": {
+    "message": "Lightweight automation scripts and system tooling"
+  },
+  "homepage.skills.shell.title": {
+    "message": "How I automate with shell"
+  },
+  "homepage.skills.shell.list.1": {
+    "message": "Writing entrypoint.sh to start and configure docker"
+  },
+  "homepage.skills.shell.list.2": {
+    "message": "Adjusting config files (e.g. permissions, variables, services)"
+  },
+  "homepage.skills.shell.list.3": {
+    "message": "Automating deployment and runtime setup on Linux systems"
+  },
+  "homepage.skills.yaml.title": {
+    "message": "How I use YAML"
+  },
+  "homepage.skills.yaml.list.1": {
+    "message": "Kubernetes deployments and services in YAML"
+  },
+  "homepage.skills.yaml.list.2": {
+    "message": "Storing configuration values such as database connections and credentials"
+  },
+  "homepage.skills.yaml.list.3": {
+    "message": "Managing environment-specific variables for different stages (dev, test, prod)"
+  },
+  "homepage.skills.container.title": {
+    "message": "How I work with containers"
+  },
+  "homepage.skills.container.list.1": {
+    "message": "Building and running services in containers (Docker)"
+  },
+  "homepage.skills.container.list.2": {
+    "message": "Managing lightweight clusters and workloads with k3s"
+  },
+  "homepage.skills.container.list.3": {
+    "message": "Using containers in deployment and automation workflows"
+  },
+  "homepage.skills.cicd.title": {
+    "message": "How I implement CI/CD"
+  },
+  "homepage.skills.cicd.list.1": {
+    "message": "Automating builds, tests, and deployments through CI/CD pipelines"
+  },
+  "homepage.skills.cicd.list.2": {
+    "message": "Running pre-build and validation steps for consistent results"
+  },
+  "homepage.skills.cicd.list.3": {
+    "message": "Triggering workflows on push, pull requests, or scheduled events"
+  },
+  "homepage.skills.security.title": {
+    "message": "How I apply security"
+  },
+  "homepage.skills.security.list.1": {
+    "message": "Simulating attacks to identify and understand vulnerabilities"
+  },
+  "homepage.skills.security.list.2": {
+    "message": "Hardening login and access control mechanisms"
+  },
+  "homepage.skills.security.list.3": {
+    "message": "Using security tools to analyze configurations and permissions"
   }
 }

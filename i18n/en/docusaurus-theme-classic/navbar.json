@@ -15,10 +15,6 @@
     "message": "Juice Shop",
     "description": "Navbar item with label Juice Shop"
   },
-  "item.label.Pattern": {
-    "message": "Pattern",
-    "description": "Navbar item with label Pattern"
-  },
   "item.label.Tools": {
     "message": "Tools",
     "description": "Navbar item with label Tools"

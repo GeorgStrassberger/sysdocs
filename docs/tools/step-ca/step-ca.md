@@ -171,5 +171,12 @@ curl -k https://127.0.0.1:9000/health
 ```
 ---
 
-nächste schritte
-Zertifikat local installieren 
+Selbst ein Zertifikat mit `step ca` erstellen.
+```bash
+step ca certificate example.home.lab \
+  /root/example.home.lab.crt \
+  /root/example.home.lab.key \
+  --provisioner gest
+```
+
+---
