@@ -24,12 +24,14 @@
     --ifm-code-font-size: 95%;
     --ifm-font-family-base: 'Quicksand', sans-serif;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-    --black: #262E34;
-    --gray: #313D47;
-    --blue-dark: #557AA3;
-    --blue: #266AD9;
-    --blue-light: #91C9F3;
-    --white: #FFFFFF;
+    --black: var(--ifm-background-color);
+    --gray: var(--ifm-background-surface-color);
+    --blue-dark: #557aa3;
+    --blue: #266ad9;
+    --blue-light: #91c9f3;
+    --white: var(--ifm-font-color-base);
+    --on-blue: #ffffff;
+    --surface-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
     --lh: 120%;
 }
 
@@ -43,6 +45,7 @@
     --ifm-color-primary-lighter: #32d8b4;
     --ifm-color-primary-lightest: #4fddbf;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --surface-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -55,10 +58,16 @@ body {
 
 .bg-blue {
     background-color: var(--blue);
+    --white: var(--on-blue);
 }
 
 .bg-black {
     background-color: var(--black);
+}
+
+.bg-blue,
+.bg-black {
+    transition: background-color 220ms ease-in-out, color 220ms ease-in-out;
 }
 
 
@@ -69,7 +78,7 @@ body {
 }
 
 .title {
-    color: var(--white);
+    color: inherit;
     font-size: clamp(40px, 2.4vw, 64px);
     font-weight: 500;
     line-height: var(--lh);
